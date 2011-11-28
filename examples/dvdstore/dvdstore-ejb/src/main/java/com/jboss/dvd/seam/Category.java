@@ -25,7 +25,7 @@ import org.hibernate.search.annotations.Indexed;
 
 @Entity
 @Table(name="CATEGORIES")
-@Cache(usage=CacheConcurrencyStrategy.READ_ONLY)
+//@Cache(usage=CacheConcurrencyStrategy.READ_ONLY)
 @Indexed
 public class Category
     implements Serializable
@@ -46,8 +46,8 @@ public class Category
 
     @Column(name="NAME",nullable=false,unique=true,length=50)
     @Fields({
-       @Field(index=Index.TOKENIZED),
-       @Field(index=Index.TOKENIZED, name="name:ngrams", analyzer=@Analyzer(definition="ngrams"))})
+       @Field(index=Index.YES),
+       @Field(index=Index.YES, name="name:ngrams", analyzer=@Analyzer(definition="ngrams"))})
     public String getName() {
         return name;
     }

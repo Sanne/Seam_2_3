@@ -72,7 +72,7 @@ public class Product implements Serializable
     }     
 
     @Column(name="ASIN", length=16)
-    @Field(index=Index.UN_TOKENIZED)
+    @Field(index=Index.NO)
     public String getASIN() {
         return asin;
     }
@@ -116,8 +116,8 @@ public class Product implements Serializable
     
     @Column(name="TITLE",nullable=false,length=100)
     @Fields({
-       @Field(index=Index.TOKENIZED),
-       @Field(index=Index.TOKENIZED, name="title:ngrams", analyzer=@Analyzer(definition="ngrams"))})
+       @Field(index=Index.YES),
+       @Field(index=Index.YES, name="title:ngrams", analyzer=@Analyzer(definition="ngrams"))})
     public String getTitle() {
         return title;
     }
@@ -125,10 +125,10 @@ public class Product implements Serializable
         this.title = title;
     }
 
-    @Column(name="DESCRIPTION",length=1024)
+    @Column(name="DESCRIPTION",length=6024)
     @Fields({
-       @Field(index=Index.TOKENIZED),
-       @Field(index=Index.TOKENIZED, name="description:ngrams", analyzer=@Analyzer(definition="ngrams"))})
+       @Field(index=Index.YES),
+       @Field(index=Index.YES, name="description:ngrams", analyzer=@Analyzer(definition="ngrams"))})
     public String getDescription() {
         return description;
     }

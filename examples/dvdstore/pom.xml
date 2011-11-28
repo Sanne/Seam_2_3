@@ -16,7 +16,7 @@
         <module>dvdstore-ejb</module>
         <module>dvdstore-web</module>
         <module>dvdstore-ear</module>
-        <module>dvdstore-tests</module>
+<!--         <module>dvdstore-tests</module> -->
     </modules>
     
     <properties>
@@ -51,6 +51,13 @@
             <properties>
                 <hibernate.search.version>3.3.0.Final</hibernate.search.version>
                 <org.apache.lucene.version>3.0.3</org.apache.lucene.version>
+            </properties>
+        </profile>
+        <profile>
+            <id>jbossas7</id>
+            <properties>
+                <hibernate.search.version>4.0.0.CR2</hibernate.search.version>
+                <org.apache.lucene.version>3.4.0</org.apache.lucene.version>
             </properties>
         </profile>
     </profiles>
