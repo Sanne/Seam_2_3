@@ -1,0 +1,1146 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Seam Integration Tests 2.3.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ seam-integration-tests ---
+[INFO] Deleting /home/maschmid/devel/seam/community/Seam_2_3/seam-integration-tests/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (seam-build-req) @ seam-integration-tests ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.2:resources (default-resources) @ seam-integration-tests ---
+[INFO] Using default encoding to copy filtered resources.
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.1:unpack (copy-seam-bootstrap) @ seam-integration-tests ---
+[INFO] Configured Artifact: org.jboss.seam:jboss-embedded-bootstrap:2.3.0-SNAPSHOT:jar
+[INFO] Unpacking /home/maschmid/.m2/repository/org/jboss/seam/jboss-embedded-bootstrap/2.3.0-SNAPSHOT/jboss-embedded-bootstrap-2.3.0-SNAPSHOT.jar to
+  /home/maschmid/devel/seam/community/Seam_2_3/seam-integration-tests/target
+   with includes null and excludes:null
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ seam-integration-tests ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.2:testResources (default-testResources) @ seam-integration-tests ---
+[INFO] Using default encoding to copy filtered resources.
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ seam-integration-tests ---
+[WARNING] org.jboss.seam.test.integration.ConversationTest:[27,741] Type safety: Unchecked cast from Object to List<ConversationEntry>
+[WARNING] org.jboss.seam.test.integration.ConversationTest:[41,1305] Type safety: Unchecked cast from Object to List<ConversationEntry>
+[WARNING] org.jboss.seam.test.integration.ConversationTest:[55,1880] Type safety: Unchecked cast from Object to List<ConversationEntry>
+[WARNING] org.jboss.seam.test.integration.ConversationTest:[69,2465] Type safety: Unchecked cast from Object to List<ConversationEntry>
+[WARNING] org.jboss.seam.test.integration.ConversationTest:[84,3112] Type safety: Unchecked cast from Object to List<ConversationEntry>
+[WARNING] org.jboss.seam.test.integration.ConversationTest:[93,3513] Type safety: Unchecked cast from Object to List<ConversationEntry>
+[WARNING] org.jboss.seam.test.integration.ConversationTest:[107,4086] Type safety: Unchecked cast from Object to List<ConversationEntry>
+[WARNING] org.jboss.seam.test.integration.ConversationTest:[121,4652] Type safety: Unchecked cast from Object to List<ConversationEntry>
+[WARNING] org.jboss.seam.test.integration.ConversationTest:[134,5089] Type safety: Unchecked cast from Object to List<ConversationEntry>
+[WARNING] org.jboss.seam.test.integration.ConversationTest:[147,5614] Type safety: Unchecked cast from Object to List<ConversationEntry>
+[WARNING] org.jboss.seam.test.integration.ConversationTest:[160,6151] Type safety: Unchecked cast from Object to List<ConversationEntry>
+[WARNING] org.jboss.seam.test.integration.ConversationTest:[173,6688] Type safety: Unchecked cast from Object to List<ConversationEntry>
+[WARNING] org.jboss.seam.test.integration.ConversationTest:[186,7225] Type safety: Unchecked cast from Object to List<ConversationEntry>
+[WARNING] org.jboss.seam.test.integration.ConversationTest:[200,7760] Type safety: Unchecked cast from Object to List<ConversationEntry>
+[WARNING] org.jboss.seam.test.integration.ConversationTest:[213,8286] Type safety: Unchecked cast from Object to List<ConversationEntry>
+[WARNING] org.jboss.seam.test.integration.ConversationTest:[227,8821] Type safety: Unchecked cast from Object to List<ConversationEntry>
+[WARNING] org.jboss.seam.test.integration.bpm.SeamExpressionEvaluatorTest:[73,1678] Class is a raw type. References to generic type Class<T> should be parameterized
+[WARNING] org.jboss.seam.test.integration.bpm.SeamExpressionEvaluatorTest:[77,1830] Type safety: The method isAssignableFrom(Class) belongs to the raw type Class. References to generic type Class<T> should be parameterized
+[WARNING] org.jboss.seam.test.integration.databinding.DataModelTest:[44,1206] ArrayList is a raw type. References to generic type ArrayList<E> should be parameterized
+[WARNING] org.jboss.seam.test.integration.databinding.DataModelTest:[45,1292] HashMap is a raw type. References to generic type HashMap<K,V> should be parameterized
+[WARNING] org.jboss.seam.test.integration.databinding.DataModelTest:[46,1375] HashSet is a raw type. References to generic type HashSet<E> should be parameterized
+[WARNING] org.jboss.seam.test.integration.databinding.DataModelTest:[124,3902] Type safety: Unchecked cast from Object to List<String>
+[WARNING] org.jboss.seam.test.integration.databinding.DataModelTest:[148,4761] Map is a raw type. References to generic type Map<K,V> should be parameterized
+[WARNING] org.jboss.seam.test.integration.databinding.DataModelTest:[149,4843] Map is a raw type. References to generic type Map<K,V> should be parameterized
+[WARNING] org.jboss.seam.test.integration.databinding.DataModelTest:[212,6372] Type safety: Unchecked cast from Object to Map<String,Person>
+[WARNING] org.jboss.seam.test.integration.databinding.DataModelTest:[303,8778] Type safety: Unchecked cast from Object to Set<Person>
+[WARNING] org.jboss.seam.test.integration.PageParamTest:[65,1522] Type safety: Unchecked cast from Object to List<FacesMessage>
+[WARNING] org.jboss.seam.test.integration.CountryHome:[11,193] The serializable class CountryHome does not declare a static final serialVersionUID field of type long
+[WARNING] org.jboss.seam.test.integration.BeanA:[15,424] The serializable class BeanA does not declare a static final serialVersionUID field of type long
+[WARNING] org.jboss.seam.test.integration.BeanB:[15,373] The serializable class BeanB does not declare a static final serialVersionUID field of type long
+[WARNING] org.jboss.seam.test.integration.EntityPassivationTest:[63,2258] List is a raw type. References to generic type List<E> should be parameterized
+[WARNING] org.jboss.seam.test.integration.EntityPassivationTest:[63,2276] List is a raw type. References to generic type List<E> should be parameterized
+[WARNING] org.jboss.seam.test.integration.EntityPassivationTest:[67,2456] Set is a raw type. References to generic type Set<E> should be parameterized
+[WARNING] org.jboss.seam.test.integration.EntityPassivationTest:[67,2472] Set is a raw type. References to generic type Set<E> should be parameterized
+[WARNING] org.jboss.seam.test.integration.EntityPassivationTest:[71,2658] Map is a raw type. References to generic type Map<K,V> should be parameterized
+[WARNING] org.jboss.seam.test.integration.EntityPassivationTest:[71,2674] Map is a raw type. References to generic type Map<K,V> should be parameterized
+[WARNING] org.jboss.seam.test.integration.EntityPassivationTest:[94,3296] List is a raw type. References to generic type List<E> should be parameterized
+[WARNING] org.jboss.seam.test.integration.EntityPassivationTest:[94,3314] List is a raw type. References to generic type List<E> should be parameterized
+[WARNING] org.jboss.seam.test.integration.EntityPassivationTest:[98,3494] Set is a raw type. References to generic type Set<E> should be parameterized
+[WARNING] org.jboss.seam.test.integration.EntityPassivationTest:[98,3510] Set is a raw type. References to generic type Set<E> should be parameterized
+[WARNING] org.jboss.seam.test.integration.EntityPassivationTest:[102,3696] Map is a raw type. References to generic type Map<K,V> should be parameterized
+[WARNING] org.jboss.seam.test.integration.EntityPassivationTest:[102,3712] Map is a raw type. References to generic type Map<K,V> should be parameterized
+[WARNING] org.jboss.seam.test.integration.EntityPassivationTest:[142,5261] List is a raw type. References to generic type List<E> should be parameterized
+[WARNING] org.jboss.seam.test.integration.EntityPassivationTest:[142,5279] List is a raw type. References to generic type List<E> should be parameterized
+[WARNING] org.jboss.seam.test.integration.EntityPassivationTest:[162,5898] List is a raw type. References to generic type List<E> should be parameterized
+[WARNING] org.jboss.seam.test.integration.EntityPassivationTest:[162,5916] List is a raw type. References to generic type List<E> should be parameterized
+[WARNING] org.jboss.seam.test.integration.EntityPassivationTest:[171,6161] The serializable class SomeComponent does not declare a static final serialVersionUID field of type long
+[WARNING] org.jboss.seam.test.integration.EntityPassivationTest:[183,6463] Type safety: The expression of type List needs unchecked conversion to conform to List<UnversionedThing>
+[WARNING] org.jboss.seam.test.integration.EntityPassivationTest:[237,7780] The serializable class NestedComponent does not declare a static final serialVersionUID field of type long
+[WARNING] org.jboss.seam.test.integration.Person:[10,182] The serializable class Person does not declare a static final serialVersionUID field of type long
+[WARNING] org.jboss.seam.test.integration.security.SecurityTest:[50,1502] The serializable class MockIdentity does not declare a static final serialVersionUID field of type long
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.6:test (default-test) @ seam-integration-tests ---
+[INFO] Surefire report directory: /home/maschmid/devel/seam/community/Seam_2_3/seam-integration-tests/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+WARN  [org.jboss.seam.security.permission.PersistentPermissionResolver] no permission store available - please install a PermissionStore with the name 'org.jboss.seam.security.jpaPermissionStore' if persistent permissions are required.
+INFO  [org.jbpm.persistence.db.StaleObjectLogConfigurer] stale object exceptions will be hidden from logging
+INFO  [org.jbpm.JbpmConfiguration] using jbpm configuration resource 'jbpm.cfg.xml'
+INFO  [org.jbpm.persistence.db.StaleObjectLogConfigurer] stale object exceptions will be hidden from logging
+PASSED: concurrentFactoryCall
+PASSED: concurrentFactoryCall
+PASSED: conversationList
+PASSED: conversationStack
+PASSED: killAllOthers
+PASSED: nestedKillAllOthers
+PASSED: switcher
+PASSED: testImport
+PASSED: testReflexiveEquals
+PASSED: testResolver
+PASSED: factoryMethodExpression
+PASSED: factoryValueExpression
+PASSED: nameSpaceComponent
+PASSED: nameSpaceFactory
+PASSED: namespaceOutjection
+PASSED: pageContextTest
+
+===============================================
+    Seam Integration Tests Contexts and Components
+    Tests run: 16, Failures: 0, Skips: 0
+===============================================
+
+Hibernate: insert into UnversionedThing (id, name) values (null, ?)
+Hibernate: call identity()
+Hibernate: insert into UnversionedThing (id, name) values (null, ?)
+Hibernate: call identity()
+Hibernate: select unversione0_.id as id2_, unversione0_.name as name2_ from UnversionedThing unversione0_
+Hibernate: select unversione0_.id as id2_, unversione0_.name as name2_ from UnversionedThing unversione0_
+Hibernate: insert into Thing (id, name, version) values (null, ?, ?)
+Hibernate: call identity()
+Hibernate: update Thing set name=?, version=? where id=? and version=?
+Hibernate: insert into Thing (id, name, version) values (null, ?, ?)
+Hibernate: call identity()
+Hibernate: select thing0_.id as id0_0_, thing0_.name as name0_0_, thing0_.version as version0_0_ from Thing thing0_ where thing0_.id=?
+Hibernate: update Thing set name=?, version=? where id=? and version=?
+Hibernate: update Thing set name=?, version=? where id=? and version=?
+ERROR [org.hibernate.event.def.AbstractFlushingEventListener] Could not synchronize database state with session
+org.hibernate.StaleObjectStateException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [org.jboss.seam.test.integration.Thing#2]
+	at org.hibernate.persister.entity.AbstractEntityPersister.check(AbstractEntityPersister.java:1792)
+	at org.hibernate.persister.entity.AbstractEntityPersister.update(AbstractEntityPersister.java:2435)
+	at org.hibernate.persister.entity.AbstractEntityPersister.updateOrInsert(AbstractEntityPersister.java:2335)
+	at org.hibernate.persister.entity.AbstractEntityPersister.update(AbstractEntityPersister.java:2635)
+	at org.hibernate.action.EntityUpdateAction.execute(EntityUpdateAction.java:115)
+	at org.hibernate.engine.ActionQueue.execute(ActionQueue.java:279)
+	at org.hibernate.engine.ActionQueue.executeActions(ActionQueue.java:263)
+	at org.hibernate.engine.ActionQueue.executeActions(ActionQueue.java:168)
+	at org.hibernate.event.def.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:321)
+	at org.hibernate.event.def.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:50)
+	at org.hibernate.impl.SessionImpl.flush(SessionImpl.java:1027)
+	at org.hibernate.impl.SessionImpl.managedFlush(SessionImpl.java:365)
+	at org.hibernate.ejb.AbstractEntityManagerImpl$1.beforeCompletion(AbstractEntityManagerImpl.java:504)
+	at com.arjuna.ats.internal.jta.resources.arjunacore.SynchronizationImple.beforeCompletion(SynchronizationImple.java:114)
+	at com.arjuna.ats.arjuna.coordinator.TwoPhaseCoordinator.beforeCompletion(TwoPhaseCoordinator.java:250)
+	at com.arjuna.ats.arjuna.coordinator.TwoPhaseCoordinator.end(TwoPhaseCoordinator.java:86)
+	at com.arjuna.ats.arjuna.AtomicAction.commit(AtomicAction.java:177)
+	at com.arjuna.ats.internal.jta.transaction.arjunacore.TransactionImple.commitAndDisassociate(TransactionImple.java:1389)
+	at com.arjuna.ats.internal.jta.transaction.arjunacore.BaseTransaction.commit(BaseTransaction.java:135)
+	at com.arjuna.ats.jbossatx.BaseTransactionManagerDelegate.commit(BaseTransactionManagerDelegate.java:87)
+	at org.jboss.embedded.adapters.LocalOnlyUserTransaction.commit(LocalOnlyUserTransaction.java:96)
+	at org.jboss.seam.transaction.UTTransaction.commit(org.jboss.seam.transaction.UTTransaction:52)
+	at org.jboss.seam.jsf.SeamPhaseListener.commitOrRollback(org.jboss.seam.jsf.SeamPhaseListener:612)
+	at org.jboss.seam.jsf.SeamPhaseListener.commitOrRollback(org.jboss.seam.jsf.SeamPhaseListener:603)
+	at org.jboss.seam.jsf.SeamPhaseListener.handleTransactionsAfterPhase(org.jboss.seam.jsf.SeamPhaseListener:344)
+	at org.jboss.seam.jsf.SeamPhaseListener.afterServletPhase(org.jboss.seam.jsf.SeamPhaseListener:244)
+	at org.jboss.seam.jsf.SeamPhaseListener.afterPhase(org.jboss.seam.jsf.SeamPhaseListener:195)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.invokeApplicationPhase(org.jboss.seam.mock.AbstractSeamTest:669)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.emulateJsfLifecycle(org.jboss.seam.mock.AbstractSeamTest:605)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.access$0(org.jboss.seam.mock.AbstractSeamTest:589)
+	at org.jboss.seam.mock.AbstractSeamTest$Request$2.doFilter(org.jboss.seam.mock.AbstractSeamTest:505)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:83)
+	at org.jboss.seam.web.LoggingFilter.doFilter(org.jboss.seam.web.LoggingFilter:60)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.web.IdentityFilter.doFilter(org.jboss.seam.web.IdentityFilter:40)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.web.MultipartFilter.doFilter(org.jboss.seam.web.MultipartFilter:90)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.web.ExceptionFilter.doFilter(org.jboss.seam.web.ExceptionFilter:64)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.web.RedirectFilter.doFilter(org.jboss.seam.web.RedirectFilter:45)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.servlet.SeamFilter.doFilter(org.jboss.seam.servlet.SeamFilter:158)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.run(org.jboss.seam.mock.AbstractSeamTest:499)
+	at org.jboss.seam.test.integration.EntityTest.testStale(org.jboss.seam.test.integration.EntityTest:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:592)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:609)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:532)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:686)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1018)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:128)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:912)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:876)
+	at org.testng.TestNG.run(TestNG.java:784)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:592)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+WARN  [org.jboss.seam.jsf.SeamPhaseListener] uncaught exception, passing to exception handler
+java.lang.IllegalStateException: Could not commit transaction
+	at org.jboss.seam.jsf.SeamPhaseListener.commitOrRollback(org.jboss.seam.jsf.SeamPhaseListener:624)
+	at org.jboss.seam.jsf.SeamPhaseListener.commitOrRollback(org.jboss.seam.jsf.SeamPhaseListener:603)
+	at org.jboss.seam.jsf.SeamPhaseListener.handleTransactionsAfterPhase(org.jboss.seam.jsf.SeamPhaseListener:344)
+	at org.jboss.seam.jsf.SeamPhaseListener.afterServletPhase(org.jboss.seam.jsf.SeamPhaseListener:244)
+	at org.jboss.seam.jsf.SeamPhaseListener.afterPhase(org.jboss.seam.jsf.SeamPhaseListener:195)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.invokeApplicationPhase(org.jboss.seam.mock.AbstractSeamTest:669)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.emulateJsfLifecycle(org.jboss.seam.mock.AbstractSeamTest:605)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.access$0(org.jboss.seam.mock.AbstractSeamTest:589)
+	at org.jboss.seam.mock.AbstractSeamTest$Request$2.doFilter(org.jboss.seam.mock.AbstractSeamTest:505)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:83)
+	at org.jboss.seam.web.LoggingFilter.doFilter(org.jboss.seam.web.LoggingFilter:60)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.web.IdentityFilter.doFilter(org.jboss.seam.web.IdentityFilter:40)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.web.MultipartFilter.doFilter(org.jboss.seam.web.MultipartFilter:90)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.web.ExceptionFilter.doFilter(org.jboss.seam.web.ExceptionFilter:64)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.web.RedirectFilter.doFilter(org.jboss.seam.web.RedirectFilter:45)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.servlet.SeamFilter.doFilter(org.jboss.seam.servlet.SeamFilter:158)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.run(org.jboss.seam.mock.AbstractSeamTest:499)
+	at org.jboss.seam.test.integration.EntityTest.testStale(org.jboss.seam.test.integration.EntityTest:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:592)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:609)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:532)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:686)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1018)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:128)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:912)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:876)
+	at org.testng.TestNG.run(TestNG.java:784)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:592)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+Caused by: javax.transaction.RollbackException: [com.arjuna.ats.internal.jta.transaction.arjunacore.commitwhenaborted] [com.arjuna.ats.internal.jta.transaction.arjunacore.commitwhenaborted] Can't commit because the transaction is in aborted state
+	at com.arjuna.ats.internal.jta.transaction.arjunacore.TransactionImple.commitAndDisassociate(TransactionImple.java:1401)
+	at com.arjuna.ats.internal.jta.transaction.arjunacore.BaseTransaction.commit(BaseTransaction.java:135)
+	at com.arjuna.ats.jbossatx.BaseTransactionManagerDelegate.commit(BaseTransactionManagerDelegate.java:87)
+	at org.jboss.embedded.adapters.LocalOnlyUserTransaction.commit(LocalOnlyUserTransaction.java:96)
+	at org.jboss.seam.transaction.UTTransaction.commit(org.jboss.seam.transaction.UTTransaction:52)
+	at org.jboss.seam.jsf.SeamPhaseListener.commitOrRollback(org.jboss.seam.jsf.SeamPhaseListener:612)
+	... 51 more
+Caused by: javax.persistence.OptimisticLockException: org.hibernate.StaleObjectStateException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [org.jboss.seam.test.integration.Thing#2]
+	at org.hibernate.ejb.AbstractEntityManagerImpl.wrapStaleStateException(AbstractEntityManagerImpl.java:630)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.throwPersistenceException(AbstractEntityManagerImpl.java:588)
+	at org.hibernate.ejb.AbstractEntityManagerImpl$1.beforeCompletion(AbstractEntityManagerImpl.java:513)
+	at com.arjuna.ats.internal.jta.resources.arjunacore.SynchronizationImple.beforeCompletion(SynchronizationImple.java:114)
+	at com.arjuna.ats.arjuna.coordinator.TwoPhaseCoordinator.beforeCompletion(TwoPhaseCoordinator.java:250)
+	at com.arjuna.ats.arjuna.coordinator.TwoPhaseCoordinator.end(TwoPhaseCoordinator.java:86)
+	at com.arjuna.ats.arjuna.AtomicAction.commit(AtomicAction.java:177)
+	at com.arjuna.ats.internal.jta.transaction.arjunacore.TransactionImple.commitAndDisassociate(TransactionImple.java:1389)
+	... 56 more
+Caused by: org.hibernate.StaleObjectStateException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [org.jboss.seam.test.integration.Thing#2]
+	at org.hibernate.persister.entity.AbstractEntityPersister.check(AbstractEntityPersister.java:1792)
+	at org.hibernate.persister.entity.AbstractEntityPersister.update(AbstractEntityPersister.java:2435)
+	at org.hibernate.persister.entity.AbstractEntityPersister.updateOrInsert(AbstractEntityPersister.java:2335)
+	at org.hibernate.persister.entity.AbstractEntityPersister.update(AbstractEntityPersister.java:2635)
+	at org.hibernate.action.EntityUpdateAction.execute(EntityUpdateAction.java:115)
+	at org.hibernate.engine.ActionQueue.execute(ActionQueue.java:279)
+	at org.hibernate.engine.ActionQueue.executeActions(ActionQueue.java:263)
+	at org.hibernate.engine.ActionQueue.executeActions(ActionQueue.java:168)
+	at org.hibernate.event.def.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:321)
+	at org.hibernate.event.def.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:50)
+	at org.hibernate.impl.SessionImpl.flush(SessionImpl.java:1027)
+	at org.hibernate.impl.SessionImpl.managedFlush(SessionImpl.java:365)
+	at org.hibernate.ejb.AbstractEntityManagerImpl$1.beforeCompletion(AbstractEntityManagerImpl.java:504)
+	... 61 more
+ERROR [org.jboss.seam.exception.Exceptions] handled and logged exception
+java.lang.IllegalStateException: Could not commit transaction
+	at org.jboss.seam.jsf.SeamPhaseListener.commitOrRollback(org.jboss.seam.jsf.SeamPhaseListener:624)
+	at org.jboss.seam.jsf.SeamPhaseListener.commitOrRollback(org.jboss.seam.jsf.SeamPhaseListener:603)
+	at org.jboss.seam.jsf.SeamPhaseListener.handleTransactionsAfterPhase(org.jboss.seam.jsf.SeamPhaseListener:344)
+	at org.jboss.seam.jsf.SeamPhaseListener.afterServletPhase(org.jboss.seam.jsf.SeamPhaseListener:244)
+	at org.jboss.seam.jsf.SeamPhaseListener.afterPhase(org.jboss.seam.jsf.SeamPhaseListener:195)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.invokeApplicationPhase(org.jboss.seam.mock.AbstractSeamTest:669)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.emulateJsfLifecycle(org.jboss.seam.mock.AbstractSeamTest:605)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.access$0(org.jboss.seam.mock.AbstractSeamTest:589)
+	at org.jboss.seam.mock.AbstractSeamTest$Request$2.doFilter(org.jboss.seam.mock.AbstractSeamTest:505)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:83)
+	at org.jboss.seam.web.LoggingFilter.doFilter(org.jboss.seam.web.LoggingFilter:60)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.web.IdentityFilter.doFilter(org.jboss.seam.web.IdentityFilter:40)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.web.MultipartFilter.doFilter(org.jboss.seam.web.MultipartFilter:90)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.web.ExceptionFilter.doFilter(org.jboss.seam.web.ExceptionFilter:64)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.web.RedirectFilter.doFilter(org.jboss.seam.web.RedirectFilter:45)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.servlet.SeamFilter.doFilter(org.jboss.seam.servlet.SeamFilter:158)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.run(org.jboss.seam.mock.AbstractSeamTest:499)
+	at org.jboss.seam.test.integration.EntityTest.testStale(org.jboss.seam.test.integration.EntityTest:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:592)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:609)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:532)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:686)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1018)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:128)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:912)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:876)
+	at org.testng.TestNG.run(TestNG.java:784)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:592)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+Caused by: javax.transaction.RollbackException: [com.arjuna.ats.internal.jta.transaction.arjunacore.commitwhenaborted] [com.arjuna.ats.internal.jta.transaction.arjunacore.commitwhenaborted] Can't commit because the transaction is in aborted state
+	at com.arjuna.ats.internal.jta.transaction.arjunacore.TransactionImple.commitAndDisassociate(TransactionImple.java:1401)
+	at com.arjuna.ats.internal.jta.transaction.arjunacore.BaseTransaction.commit(BaseTransaction.java:135)
+	at com.arjuna.ats.jbossatx.BaseTransactionManagerDelegate.commit(BaseTransactionManagerDelegate.java:87)
+	at org.jboss.embedded.adapters.LocalOnlyUserTransaction.commit(LocalOnlyUserTransaction.java:96)
+	at org.jboss.seam.transaction.UTTransaction.commit(org.jboss.seam.transaction.UTTransaction:52)
+	at org.jboss.seam.jsf.SeamPhaseListener.commitOrRollback(org.jboss.seam.jsf.SeamPhaseListener:612)
+	... 51 more
+Caused by: javax.persistence.OptimisticLockException: org.hibernate.StaleObjectStateException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [org.jboss.seam.test.integration.Thing#2]
+	at org.hibernate.ejb.AbstractEntityManagerImpl.wrapStaleStateException(AbstractEntityManagerImpl.java:630)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.throwPersistenceException(AbstractEntityManagerImpl.java:588)
+	at org.hibernate.ejb.AbstractEntityManagerImpl$1.beforeCompletion(AbstractEntityManagerImpl.java:513)
+	at com.arjuna.ats.internal.jta.resources.arjunacore.SynchronizationImple.beforeCompletion(SynchronizationImple.java:114)
+	at com.arjuna.ats.arjuna.coordinator.TwoPhaseCoordinator.beforeCompletion(TwoPhaseCoordinator.java:250)
+	at com.arjuna.ats.arjuna.coordinator.TwoPhaseCoordinator.end(TwoPhaseCoordinator.java:86)
+	at com.arjuna.ats.arjuna.AtomicAction.commit(AtomicAction.java:177)
+	at com.arjuna.ats.internal.jta.transaction.arjunacore.TransactionImple.commitAndDisassociate(TransactionImple.java:1389)
+	... 56 more
+Caused by: org.hibernate.StaleObjectStateException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [org.jboss.seam.test.integration.Thing#2]
+	at org.hibernate.persister.entity.AbstractEntityPersister.check(AbstractEntityPersister.java:1792)
+	at org.hibernate.persister.entity.AbstractEntityPersister.update(AbstractEntityPersister.java:2435)
+	at org.hibernate.persister.entity.AbstractEntityPersister.updateOrInsert(AbstractEntityPersister.java:2335)
+	at org.hibernate.persister.entity.AbstractEntityPersister.update(AbstractEntityPersister.java:2635)
+	at org.hibernate.action.EntityUpdateAction.execute(EntityUpdateAction.java:115)
+	at org.hibernate.engine.ActionQueue.execute(ActionQueue.java:279)
+	at org.hibernate.engine.ActionQueue.executeActions(ActionQueue.java:263)
+	at org.hibernate.engine.ActionQueue.executeActions(ActionQueue.java:168)
+	at org.hibernate.event.def.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:321)
+	at org.hibernate.event.def.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:50)
+	at org.hibernate.impl.SessionImpl.flush(SessionImpl.java:1027)
+	at org.hibernate.impl.SessionImpl.managedFlush(SessionImpl.java:365)
+	at org.hibernate.ejb.AbstractEntityManagerImpl$1.beforeCompletion(AbstractEntityManagerImpl.java:504)
+	... 61 more
+PASSED: testEntityList
+PASSED: entityUpdatedInNestedConversation
+PASSED: testStale
+
+===============================================
+    Seam Integration Tests Persistence
+    Tests run: 3, Failures: 0, Skips: 0
+===============================================
+
+PASSED: testEventChain
+
+===============================================
+    Seam Integration Tests Events
+    Tests run: 1, Failures: 0, Skips: 0
+===============================================
+
+PASSED: testEmptyUnifiedELMethodBinding
+PASSED: testEmptyUnifiedELValueBinding
+PASSED: testUnifiedELMethodBinding
+PASSED: testUnifiedELMethodBindingWithNull
+PASSED: testUnifiedELValueBinding
+
+===============================================
+    Seam Integration Tests EL
+    Tests run: 5, Failures: 0, Skips: 0
+===============================================
+
+Hibernate: insert into Country (id, name) values (null, ?)
+Hibernate: call identity()
+Hibernate: insert into Country (id, name) values (null, ?)
+Hibernate: call identity()
+PASSED: testEntityIdentifier
+PASSED: testHibernateEntityIdentifier
+
+===============================================
+    Seam Integration Tests Framework
+    Tests run: 2, Failures: 0, Skips: 0
+===============================================
+
+PASSED: localeTest
+PASSED: timeZoneTest
+
+===============================================
+    Seam Integration Tests i8ln
+    Tests run: 2, Failures: 0, Skips: 0
+===============================================
+
+ERROR [org.jbpm.graph.def.GraphElement] action threw exception: couldn't evaluate expression '#{seamExpressionEvaluatorTestController.nonExistentMethod}'
+org.jbpm.JbpmException: couldn't evaluate expression '#{seamExpressionEvaluatorTestController.nonExistentMethod}'
+	at org.jbpm.jpdl.el.impl.JbpmExpressionEvaluator.evaluate(JbpmExpressionEvaluator.java:43)
+	at org.jbpm.jpdl.el.impl.JbpmExpressionEvaluator.evaluate(JbpmExpressionEvaluator.java:30)
+	at org.jbpm.graph.def.Action.execute(Action.java:118)
+	at org.jboss.seam.bpm.SeamUserCodeInterceptor$1.process(org.jboss.seam.bpm.SeamUserCodeInterceptor:80)
+	at org.jboss.seam.bpm.SeamUserCodeInterceptor$ContextualCall.run(org.jboss.seam.bpm.SeamUserCodeInterceptor:33)
+	at org.jboss.seam.bpm.SeamUserCodeInterceptor.executeAction(org.jboss.seam.bpm.SeamUserCodeInterceptor:82)
+	at org.jbpm.graph.def.GraphElement.executeAction(GraphElement.java:262)
+	at org.jbpm.graph.def.GraphElement.executeActions(GraphElement.java:220)
+	at org.jbpm.graph.def.GraphElement.fireAndPropagateEvent(GraphElement.java:190)
+	at org.jbpm.graph.def.GraphElement.fireEvent(GraphElement.java:174)
+	at org.jbpm.graph.def.Transition.take(Transition.java:138)
+	at org.jbpm.graph.def.Node.leave(Node.java:394)
+	at org.jbpm.graph.node.StartState.leave(StartState.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:592)
+	at org.hibernate.proxy.pojo.javassist.JavassistLazyInitializer.invoke(JavassistLazyInitializer.java:197)
+	at org.jbpm.graph.def.Node_$$_javassist_50.leave(Node_$$_javassist_50.java)
+	at org.jbpm.graph.exe.Token.signal(Token.java:195)
+	at org.jbpm.graph.exe.Token.signal(Token.java:140)
+	at org.jbpm.graph.exe.ProcessInstance.signal(ProcessInstance.java:271)
+	at org.jboss.seam.bpm.BusinessProcess.afterCreateProcess(org.jboss.seam.bpm.BusinessProcess:161)
+	at org.jboss.seam.bpm.BusinessProcess.createProcess(org.jboss.seam.bpm.BusinessProcess:135)
+	at org.jboss.seam.bpm.BusinessProcess.createProcess(org.jboss.seam.bpm.BusinessProcess:123)
+	at org.jboss.seam.bpm.BusinessProcessInterceptor.afterInvocation(org.jboss.seam.bpm.BusinessProcessInterceptor:108)
+	at org.jboss.seam.bpm.BusinessProcessInterceptor.aroundInvoke(org.jboss.seam.bpm.BusinessProcessInterceptor:51)
+	at org.jboss.seam.intercept.SeamInvocationContext.proceed(org.jboss.seam.intercept.SeamInvocationContext:68)
+	at org.jboss.seam.core.MethodContextInterceptor.aroundInvoke(org.jboss.seam.core.MethodContextInterceptor:44)
+	at org.jboss.seam.intercept.SeamInvocationContext.proceed(org.jboss.seam.intercept.SeamInvocationContext:68)
+	at org.jboss.seam.intercept.RootInterceptor.invoke(org.jboss.seam.intercept.RootInterceptor:107)
+	at org.jboss.seam.intercept.JavaBeanInterceptor.interceptInvocation(org.jboss.seam.intercept.JavaBeanInterceptor:185)
+	at org.jboss.seam.intercept.JavaBeanInterceptor.invoke(org.jboss.seam.intercept.JavaBeanInterceptor:103)
+	at org.jboss.seam.test.integration.bpm.SeamExpressionEvaluatorTestController_$$_javassist_seam_16.createProcess3(SeamExpressionEvaluatorTestController_$$_javassist_seam_16.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:592)
+	at org.jboss.el.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:335)
+	at org.jboss.el.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:348)
+	at org.jboss.el.parser.AstPropertySuffix.invoke(AstPropertySuffix.java:58)
+	at org.jboss.el.parser.AstValue.invoke(AstValue.java:96)
+	at org.jboss.el.MethodExpressionImpl.invoke(MethodExpressionImpl.java:276)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.invokeMethod(org.jboss.seam.mock.AbstractSeamTest:471)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.invokeAction(org.jboss.seam.mock.AbstractSeamTest:480)
+	at org.jboss.seam.test.integration.bpm.SeamExpressionEvaluatorTest$3.invokeApplication(org.jboss.seam.test.integration.bpm.SeamExpressionEvaluatorTest:58)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.invokeApplicationPhase(org.jboss.seam.mock.AbstractSeamTest:656)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.emulateJsfLifecycle(org.jboss.seam.mock.AbstractSeamTest:605)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.access$0(org.jboss.seam.mock.AbstractSeamTest:589)
+	at org.jboss.seam.mock.AbstractSeamTest$Request$2.doFilter(org.jboss.seam.mock.AbstractSeamTest:505)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:83)
+	at org.jboss.seam.web.LoggingFilter.doFilter(org.jboss.seam.web.LoggingFilter:60)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.web.IdentityFilter.doFilter(org.jboss.seam.web.IdentityFilter:40)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.web.MultipartFilter.doFilter(org.jboss.seam.web.MultipartFilter:90)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.web.ExceptionFilter.doFilter(org.jboss.seam.web.ExceptionFilter:64)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.web.RedirectFilter.doFilter(org.jboss.seam.web.RedirectFilter:45)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.servlet.SeamFilter.doFilter(org.jboss.seam.servlet.SeamFilter:158)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.run(org.jboss.seam.mock.AbstractSeamTest:499)
+	at org.jboss.seam.test.integration.bpm.SeamExpressionEvaluatorTest.testMissingMethod(org.jboss.seam.test.integration.bpm.SeamExpressionEvaluatorTest:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:592)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:609)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:532)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:686)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1018)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:128)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:912)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:876)
+	at org.testng.TestNG.run(TestNG.java:784)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:592)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+Caused by: org.jbpm.jpdl.el.ELException: Error evaluating ${seamExpressionEvaluatorTestController.nonExistentMethod}; possible causes are logged at debug level
+	at org.jboss.seam.bpm.SeamExpressionEvaluator$1.evaluate(org.jboss.seam.bpm.SeamExpressionEvaluator:142)
+	at org.jboss.seam.bpm.SeamExpressionEvaluator.evaluate(org.jboss.seam.bpm.SeamExpressionEvaluator:45)
+	at org.jbpm.jpdl.el.impl.JbpmExpressionEvaluator.evaluate(JbpmExpressionEvaluator.java:39)
+	... 92 more
+PASSED: noProcessDefinition
+PASSED: noVariableStart
+PASSED: testMissingMethod
+PASSED: testUnqualifiedValueExpression
+PASSED: testValueExpression
+
+===============================================
+    Seam Integration Tests BPM
+    Tests run: 5, Failures: 0, Skips: 0
+===============================================
+
+PASSED: delayForStartup
+PASSED: publishToTopic
+PASSED: sendToQueue
+
+===============================================
+    Seam Integration Tests JMS
+    Tests run: 3, Failures: 0, Skips: 0
+===============================================
+
+PASSED: testCustomELResolver
+PASSED: testEl
+PASSED: testSeamSecurity
+
+===============================================
+    Seam Integration Tests Mocks
+    Tests run: 3, Failures: 0, Skips: 0
+===============================================
+
+PASSED: testPageParameter
+PASSED: testPageParameterFailsModelValidation
+PASSED: testPageParameterModelValidationDisabled
+PASSED: testRequiredPageParameter
+
+===============================================
+    Seam Integration Tests Pages dot xml
+    Tests run: 4, Failures: 0, Skips: 0
+===============================================
+
+PASSED: testArrayDataModelSerialization
+PASSED: testDataModelOutjection
+PASSED: testDataModels
+PASSED: testListDataModelSerialization
+PASSED: testMapDataModel
+PASSED: testMapDataModelSerialization
+PASSED: testSetDataModel
+PASSED: testSetDataModelSerialization
+
+===============================================
+    Seam Integration Tests DataBinding
+    Tests run: 8, Failures: 0, Skips: 0
+===============================================
+
+PASSED: testDisableSecurity
+PASSED: testLogin
+
+===============================================
+    Seam Integration Tests Security
+    Tests run: 2, Failures: 0, Skips: 0
+===============================================
+
+
+===============================================
+Seam Integration Testsuite
+Total tests run: 54, Failures: 0, Skips: 0
+===============================================
+
+[org.testng.internal.PoolService] Shutting down poolservice org.testng.internal.PoolService@1cc3b4c1 terminated:false
+Tests run: 54, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 33.672 sec
+
+Results :
+
+Tests run: 54, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.2:jar (default-jar) @ seam-integration-tests ---
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] Building jar: /home/maschmid/devel/seam/community/Seam_2_3/seam-integration-tests/target/seam-integration-tests-2.3.0-SNAPSHOT.jar
+[INFO] 
+[INFO] >>> maven-source-plugin:2.0.2:jar (default) @ seam-integration-tests >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (seam-build-req) @ seam-integration-tests ---
+[INFO] 
+[INFO] <<< maven-source-plugin:2.0.2:jar (default) @ seam-integration-tests <<<
+[INFO] 
+[INFO] --- maven-source-plugin:2.0.2:jar (default) @ seam-integration-tests ---
+[INFO] Building jar: /home/maschmid/devel/seam/community/Seam_2_3/seam-integration-tests/target/seam-integration-tests-2.3.0-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] >>> maven-source-plugin:2.0.2:jar (attach-sources) @ seam-integration-tests >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (seam-build-req) @ seam-integration-tests ---
+[INFO] 
+[INFO] <<< maven-source-plugin:2.0.2:jar (attach-sources) @ seam-integration-tests <<<
+[INFO] 
+[INFO] --- maven-source-plugin:2.0.2:jar (attach-sources) @ seam-integration-tests ---
+[INFO] Building jar: /home/maschmid/devel/seam/community/Seam_2_3/seam-integration-tests/target/seam-integration-tests-2.3.0-SNAPSHOT-sources.jar
+[WARNING] Artifact org.jboss.seam:seam-integration-tests:java-source:sources:2.3.0-SNAPSHOT already attached to project, ignoring duplicate
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.6:test (surefire-it) @ seam-integration-tests ---
+[INFO] Surefire report directory: /home/maschmid/devel/seam/community/Seam_2_3/seam-integration-tests/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+WARN  [org.jboss.seam.security.permission.PersistentPermissionResolver] no permission store available - please install a PermissionStore with the name 'org.jboss.seam.security.jpaPermissionStore' if persistent permissions are required.
+INFO  [org.jbpm.persistence.db.StaleObjectLogConfigurer] stale object exceptions will be hidden from logging
+INFO  [org.jbpm.JbpmConfiguration] using jbpm configuration resource 'jbpm.cfg.xml'
+INFO  [org.jbpm.persistence.db.StaleObjectLogConfigurer] stale object exceptions will be hidden from logging
+PASSED: concurrentFactoryCall
+PASSED: concurrentFactoryCall
+PASSED: conversationList
+PASSED: conversationStack
+PASSED: killAllOthers
+PASSED: nestedKillAllOthers
+PASSED: switcher
+PASSED: testImport
+PASSED: testReflexiveEquals
+PASSED: testResolver
+PASSED: factoryMethodExpression
+PASSED: factoryValueExpression
+PASSED: nameSpaceComponent
+PASSED: nameSpaceFactory
+PASSED: namespaceOutjection
+PASSED: pageContextTest
+
+===============================================
+    Seam Integration Tests Contexts and Components
+    Tests run: 16, Failures: 0, Skips: 0
+===============================================
+
+Hibernate: insert into UnversionedThing (id, name) values (null, ?)
+Hibernate: call identity()
+Hibernate: insert into UnversionedThing (id, name) values (null, ?)
+Hibernate: call identity()
+Hibernate: select unversione0_.id as id2_, unversione0_.name as name2_ from UnversionedThing unversione0_
+Hibernate: select unversione0_.id as id2_, unversione0_.name as name2_ from UnversionedThing unversione0_
+Hibernate: insert into Thing (id, name, version) values (null, ?, ?)
+Hibernate: call identity()
+Hibernate: update Thing set name=?, version=? where id=? and version=?
+Hibernate: insert into Thing (id, name, version) values (null, ?, ?)
+Hibernate: call identity()
+Hibernate: select thing0_.id as id0_0_, thing0_.name as name0_0_, thing0_.version as version0_0_ from Thing thing0_ where thing0_.id=?
+Hibernate: update Thing set name=?, version=? where id=? and version=?
+Hibernate: update Thing set name=?, version=? where id=? and version=?
+ERROR [org.hibernate.event.def.AbstractFlushingEventListener] Could not synchronize database state with session
+org.hibernate.StaleObjectStateException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [org.jboss.seam.test.integration.Thing#2]
+	at org.hibernate.persister.entity.AbstractEntityPersister.check(AbstractEntityPersister.java:1792)
+	at org.hibernate.persister.entity.AbstractEntityPersister.update(AbstractEntityPersister.java:2435)
+	at org.hibernate.persister.entity.AbstractEntityPersister.updateOrInsert(AbstractEntityPersister.java:2335)
+	at org.hibernate.persister.entity.AbstractEntityPersister.update(AbstractEntityPersister.java:2635)
+	at org.hibernate.action.EntityUpdateAction.execute(EntityUpdateAction.java:115)
+	at org.hibernate.engine.ActionQueue.execute(ActionQueue.java:279)
+	at org.hibernate.engine.ActionQueue.executeActions(ActionQueue.java:263)
+	at org.hibernate.engine.ActionQueue.executeActions(ActionQueue.java:168)
+	at org.hibernate.event.def.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:321)
+	at org.hibernate.event.def.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:50)
+	at org.hibernate.impl.SessionImpl.flush(SessionImpl.java:1027)
+	at org.hibernate.impl.SessionImpl.managedFlush(SessionImpl.java:365)
+	at org.hibernate.ejb.AbstractEntityManagerImpl$1.beforeCompletion(AbstractEntityManagerImpl.java:504)
+	at com.arjuna.ats.internal.jta.resources.arjunacore.SynchronizationImple.beforeCompletion(SynchronizationImple.java:114)
+	at com.arjuna.ats.arjuna.coordinator.TwoPhaseCoordinator.beforeCompletion(TwoPhaseCoordinator.java:250)
+	at com.arjuna.ats.arjuna.coordinator.TwoPhaseCoordinator.end(TwoPhaseCoordinator.java:86)
+	at com.arjuna.ats.arjuna.AtomicAction.commit(AtomicAction.java:177)
+	at com.arjuna.ats.internal.jta.transaction.arjunacore.TransactionImple.commitAndDisassociate(TransactionImple.java:1389)
+	at com.arjuna.ats.internal.jta.transaction.arjunacore.BaseTransaction.commit(BaseTransaction.java:135)
+	at com.arjuna.ats.jbossatx.BaseTransactionManagerDelegate.commit(BaseTransactionManagerDelegate.java:87)
+	at org.jboss.embedded.adapters.LocalOnlyUserTransaction.commit(LocalOnlyUserTransaction.java:96)
+	at org.jboss.seam.transaction.UTTransaction.commit(org.jboss.seam.transaction.UTTransaction:52)
+	at org.jboss.seam.jsf.SeamPhaseListener.commitOrRollback(org.jboss.seam.jsf.SeamPhaseListener:612)
+	at org.jboss.seam.jsf.SeamPhaseListener.commitOrRollback(org.jboss.seam.jsf.SeamPhaseListener:603)
+	at org.jboss.seam.jsf.SeamPhaseListener.handleTransactionsAfterPhase(org.jboss.seam.jsf.SeamPhaseListener:344)
+	at org.jboss.seam.jsf.SeamPhaseListener.afterServletPhase(org.jboss.seam.jsf.SeamPhaseListener:244)
+	at org.jboss.seam.jsf.SeamPhaseListener.afterPhase(org.jboss.seam.jsf.SeamPhaseListener:195)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.invokeApplicationPhase(org.jboss.seam.mock.AbstractSeamTest:669)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.emulateJsfLifecycle(org.jboss.seam.mock.AbstractSeamTest:605)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.access$0(org.jboss.seam.mock.AbstractSeamTest:589)
+	at org.jboss.seam.mock.AbstractSeamTest$Request$2.doFilter(org.jboss.seam.mock.AbstractSeamTest:505)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:83)
+	at org.jboss.seam.web.LoggingFilter.doFilter(org.jboss.seam.web.LoggingFilter:60)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.web.IdentityFilter.doFilter(org.jboss.seam.web.IdentityFilter:40)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.web.MultipartFilter.doFilter(org.jboss.seam.web.MultipartFilter:90)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.web.ExceptionFilter.doFilter(org.jboss.seam.web.ExceptionFilter:64)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.web.RedirectFilter.doFilter(org.jboss.seam.web.RedirectFilter:45)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.servlet.SeamFilter.doFilter(org.jboss.seam.servlet.SeamFilter:158)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.run(org.jboss.seam.mock.AbstractSeamTest:499)
+	at org.jboss.seam.test.integration.EntityTest.testStale(org.jboss.seam.test.integration.EntityTest:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:592)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:609)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:532)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:686)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1018)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:128)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:912)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:876)
+	at org.testng.TestNG.run(TestNG.java:784)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:592)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+WARN  [org.jboss.seam.jsf.SeamPhaseListener] uncaught exception, passing to exception handler
+java.lang.IllegalStateException: Could not commit transaction
+	at org.jboss.seam.jsf.SeamPhaseListener.commitOrRollback(org.jboss.seam.jsf.SeamPhaseListener:624)
+	at org.jboss.seam.jsf.SeamPhaseListener.commitOrRollback(org.jboss.seam.jsf.SeamPhaseListener:603)
+	at org.jboss.seam.jsf.SeamPhaseListener.handleTransactionsAfterPhase(org.jboss.seam.jsf.SeamPhaseListener:344)
+	at org.jboss.seam.jsf.SeamPhaseListener.afterServletPhase(org.jboss.seam.jsf.SeamPhaseListener:244)
+	at org.jboss.seam.jsf.SeamPhaseListener.afterPhase(org.jboss.seam.jsf.SeamPhaseListener:195)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.invokeApplicationPhase(org.jboss.seam.mock.AbstractSeamTest:669)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.emulateJsfLifecycle(org.jboss.seam.mock.AbstractSeamTest:605)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.access$0(org.jboss.seam.mock.AbstractSeamTest:589)
+	at org.jboss.seam.mock.AbstractSeamTest$Request$2.doFilter(org.jboss.seam.mock.AbstractSeamTest:505)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:83)
+	at org.jboss.seam.web.LoggingFilter.doFilter(org.jboss.seam.web.LoggingFilter:60)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.web.IdentityFilter.doFilter(org.jboss.seam.web.IdentityFilter:40)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.web.MultipartFilter.doFilter(org.jboss.seam.web.MultipartFilter:90)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.web.ExceptionFilter.doFilter(org.jboss.seam.web.ExceptionFilter:64)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.web.RedirectFilter.doFilter(org.jboss.seam.web.RedirectFilter:45)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.servlet.SeamFilter.doFilter(org.jboss.seam.servlet.SeamFilter:158)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.run(org.jboss.seam.mock.AbstractSeamTest:499)
+	at org.jboss.seam.test.integration.EntityTest.testStale(org.jboss.seam.test.integration.EntityTest:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:592)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:609)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:532)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:686)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1018)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:128)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:912)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:876)
+	at org.testng.TestNG.run(TestNG.java:784)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:592)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+Caused by: javax.transaction.RollbackException: [com.arjuna.ats.internal.jta.transaction.arjunacore.commitwhenaborted] [com.arjuna.ats.internal.jta.transaction.arjunacore.commitwhenaborted] Can't commit because the transaction is in aborted state
+	at com.arjuna.ats.internal.jta.transaction.arjunacore.TransactionImple.commitAndDisassociate(TransactionImple.java:1401)
+	at com.arjuna.ats.internal.jta.transaction.arjunacore.BaseTransaction.commit(BaseTransaction.java:135)
+	at com.arjuna.ats.jbossatx.BaseTransactionManagerDelegate.commit(BaseTransactionManagerDelegate.java:87)
+	at org.jboss.embedded.adapters.LocalOnlyUserTransaction.commit(LocalOnlyUserTransaction.java:96)
+	at org.jboss.seam.transaction.UTTransaction.commit(org.jboss.seam.transaction.UTTransaction:52)
+	at org.jboss.seam.jsf.SeamPhaseListener.commitOrRollback(org.jboss.seam.jsf.SeamPhaseListener:612)
+	... 51 more
+Caused by: javax.persistence.OptimisticLockException: org.hibernate.StaleObjectStateException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [org.jboss.seam.test.integration.Thing#2]
+	at org.hibernate.ejb.AbstractEntityManagerImpl.wrapStaleStateException(AbstractEntityManagerImpl.java:630)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.throwPersistenceException(AbstractEntityManagerImpl.java:588)
+	at org.hibernate.ejb.AbstractEntityManagerImpl$1.beforeCompletion(AbstractEntityManagerImpl.java:513)
+	at com.arjuna.ats.internal.jta.resources.arjunacore.SynchronizationImple.beforeCompletion(SynchronizationImple.java:114)
+	at com.arjuna.ats.arjuna.coordinator.TwoPhaseCoordinator.beforeCompletion(TwoPhaseCoordinator.java:250)
+	at com.arjuna.ats.arjuna.coordinator.TwoPhaseCoordinator.end(TwoPhaseCoordinator.java:86)
+	at com.arjuna.ats.arjuna.AtomicAction.commit(AtomicAction.java:177)
+	at com.arjuna.ats.internal.jta.transaction.arjunacore.TransactionImple.commitAndDisassociate(TransactionImple.java:1389)
+	... 56 more
+Caused by: org.hibernate.StaleObjectStateException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [org.jboss.seam.test.integration.Thing#2]
+	at org.hibernate.persister.entity.AbstractEntityPersister.check(AbstractEntityPersister.java:1792)
+	at org.hibernate.persister.entity.AbstractEntityPersister.update(AbstractEntityPersister.java:2435)
+	at org.hibernate.persister.entity.AbstractEntityPersister.updateOrInsert(AbstractEntityPersister.java:2335)
+	at org.hibernate.persister.entity.AbstractEntityPersister.update(AbstractEntityPersister.java:2635)
+	at org.hibernate.action.EntityUpdateAction.execute(EntityUpdateAction.java:115)
+	at org.hibernate.engine.ActionQueue.execute(ActionQueue.java:279)
+	at org.hibernate.engine.ActionQueue.executeActions(ActionQueue.java:263)
+	at org.hibernate.engine.ActionQueue.executeActions(ActionQueue.java:168)
+	at org.hibernate.event.def.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:321)
+	at org.hibernate.event.def.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:50)
+	at org.hibernate.impl.SessionImpl.flush(SessionImpl.java:1027)
+	at org.hibernate.impl.SessionImpl.managedFlush(SessionImpl.java:365)
+	at org.hibernate.ejb.AbstractEntityManagerImpl$1.beforeCompletion(AbstractEntityManagerImpl.java:504)
+	... 61 more
+ERROR [org.jboss.seam.exception.Exceptions] handled and logged exception
+java.lang.IllegalStateException: Could not commit transaction
+	at org.jboss.seam.jsf.SeamPhaseListener.commitOrRollback(org.jboss.seam.jsf.SeamPhaseListener:624)
+	at org.jboss.seam.jsf.SeamPhaseListener.commitOrRollback(org.jboss.seam.jsf.SeamPhaseListener:603)
+	at org.jboss.seam.jsf.SeamPhaseListener.handleTransactionsAfterPhase(org.jboss.seam.jsf.SeamPhaseListener:344)
+	at org.jboss.seam.jsf.SeamPhaseListener.afterServletPhase(org.jboss.seam.jsf.SeamPhaseListener:244)
+	at org.jboss.seam.jsf.SeamPhaseListener.afterPhase(org.jboss.seam.jsf.SeamPhaseListener:195)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.invokeApplicationPhase(org.jboss.seam.mock.AbstractSeamTest:669)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.emulateJsfLifecycle(org.jboss.seam.mock.AbstractSeamTest:605)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.access$0(org.jboss.seam.mock.AbstractSeamTest:589)
+	at org.jboss.seam.mock.AbstractSeamTest$Request$2.doFilter(org.jboss.seam.mock.AbstractSeamTest:505)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:83)
+	at org.jboss.seam.web.LoggingFilter.doFilter(org.jboss.seam.web.LoggingFilter:60)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.web.IdentityFilter.doFilter(org.jboss.seam.web.IdentityFilter:40)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.web.MultipartFilter.doFilter(org.jboss.seam.web.MultipartFilter:90)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.web.ExceptionFilter.doFilter(org.jboss.seam.web.ExceptionFilter:64)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.web.RedirectFilter.doFilter(org.jboss.seam.web.RedirectFilter:45)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.servlet.SeamFilter.doFilter(org.jboss.seam.servlet.SeamFilter:158)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.run(org.jboss.seam.mock.AbstractSeamTest:499)
+	at org.jboss.seam.test.integration.EntityTest.testStale(org.jboss.seam.test.integration.EntityTest:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:592)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:609)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:532)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:686)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1018)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:128)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:912)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:876)
+	at org.testng.TestNG.run(TestNG.java:784)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:592)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+Caused by: javax.transaction.RollbackException: [com.arjuna.ats.internal.jta.transaction.arjunacore.commitwhenaborted] [com.arjuna.ats.internal.jta.transaction.arjunacore.commitwhenaborted] Can't commit because the transaction is in aborted state
+	at com.arjuna.ats.internal.jta.transaction.arjunacore.TransactionImple.commitAndDisassociate(TransactionImple.java:1401)
+	at com.arjuna.ats.internal.jta.transaction.arjunacore.BaseTransaction.commit(BaseTransaction.java:135)
+	at com.arjuna.ats.jbossatx.BaseTransactionManagerDelegate.commit(BaseTransactionManagerDelegate.java:87)
+	at org.jboss.embedded.adapters.LocalOnlyUserTransaction.commit(LocalOnlyUserTransaction.java:96)
+	at org.jboss.seam.transaction.UTTransaction.commit(org.jboss.seam.transaction.UTTransaction:52)
+	at org.jboss.seam.jsf.SeamPhaseListener.commitOrRollback(org.jboss.seam.jsf.SeamPhaseListener:612)
+	... 51 more
+Caused by: javax.persistence.OptimisticLockException: org.hibernate.StaleObjectStateException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [org.jboss.seam.test.integration.Thing#2]
+	at org.hibernate.ejb.AbstractEntityManagerImpl.wrapStaleStateException(AbstractEntityManagerImpl.java:630)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.throwPersistenceException(AbstractEntityManagerImpl.java:588)
+	at org.hibernate.ejb.AbstractEntityManagerImpl$1.beforeCompletion(AbstractEntityManagerImpl.java:513)
+	at com.arjuna.ats.internal.jta.resources.arjunacore.SynchronizationImple.beforeCompletion(SynchronizationImple.java:114)
+	at com.arjuna.ats.arjuna.coordinator.TwoPhaseCoordinator.beforeCompletion(TwoPhaseCoordinator.java:250)
+	at com.arjuna.ats.arjuna.coordinator.TwoPhaseCoordinator.end(TwoPhaseCoordinator.java:86)
+	at com.arjuna.ats.arjuna.AtomicAction.commit(AtomicAction.java:177)
+	at com.arjuna.ats.internal.jta.transaction.arjunacore.TransactionImple.commitAndDisassociate(TransactionImple.java:1389)
+	... 56 more
+Caused by: org.hibernate.StaleObjectStateException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [org.jboss.seam.test.integration.Thing#2]
+	at org.hibernate.persister.entity.AbstractEntityPersister.check(AbstractEntityPersister.java:1792)
+	at org.hibernate.persister.entity.AbstractEntityPersister.update(AbstractEntityPersister.java:2435)
+	at org.hibernate.persister.entity.AbstractEntityPersister.updateOrInsert(AbstractEntityPersister.java:2335)
+	at org.hibernate.persister.entity.AbstractEntityPersister.update(AbstractEntityPersister.java:2635)
+	at org.hibernate.action.EntityUpdateAction.execute(EntityUpdateAction.java:115)
+	at org.hibernate.engine.ActionQueue.execute(ActionQueue.java:279)
+	at org.hibernate.engine.ActionQueue.executeActions(ActionQueue.java:263)
+	at org.hibernate.engine.ActionQueue.executeActions(ActionQueue.java:168)
+	at org.hibernate.event.def.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:321)
+	at org.hibernate.event.def.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:50)
+	at org.hibernate.impl.SessionImpl.flush(SessionImpl.java:1027)
+	at org.hibernate.impl.SessionImpl.managedFlush(SessionImpl.java:365)
+	at org.hibernate.ejb.AbstractEntityManagerImpl$1.beforeCompletion(AbstractEntityManagerImpl.java:504)
+	... 61 more
+PASSED: testEntityList
+PASSED: entityUpdatedInNestedConversation
+PASSED: testStale
+
+===============================================
+    Seam Integration Tests Persistence
+    Tests run: 3, Failures: 0, Skips: 0
+===============================================
+
+PASSED: testEventChain
+
+===============================================
+    Seam Integration Tests Events
+    Tests run: 1, Failures: 0, Skips: 0
+===============================================
+
+PASSED: testEmptyUnifiedELMethodBinding
+PASSED: testEmptyUnifiedELValueBinding
+PASSED: testUnifiedELMethodBinding
+PASSED: testUnifiedELMethodBindingWithNull
+PASSED: testUnifiedELValueBinding
+
+===============================================
+    Seam Integration Tests EL
+    Tests run: 5, Failures: 0, Skips: 0
+===============================================
+
+Hibernate: insert into Country (id, name) values (null, ?)
+Hibernate: call identity()
+Hibernate: insert into Country (id, name) values (null, ?)
+Hibernate: call identity()
+PASSED: testEntityIdentifier
+PASSED: testHibernateEntityIdentifier
+
+===============================================
+    Seam Integration Tests Framework
+    Tests run: 2, Failures: 0, Skips: 0
+===============================================
+
+PASSED: localeTest
+PASSED: timeZoneTest
+
+===============================================
+    Seam Integration Tests i8ln
+    Tests run: 2, Failures: 0, Skips: 0
+===============================================
+
+ERROR [org.jbpm.graph.def.GraphElement] action threw exception: couldn't evaluate expression '#{seamExpressionEvaluatorTestController.nonExistentMethod}'
+org.jbpm.JbpmException: couldn't evaluate expression '#{seamExpressionEvaluatorTestController.nonExistentMethod}'
+	at org.jbpm.jpdl.el.impl.JbpmExpressionEvaluator.evaluate(JbpmExpressionEvaluator.java:43)
+	at org.jbpm.jpdl.el.impl.JbpmExpressionEvaluator.evaluate(JbpmExpressionEvaluator.java:30)
+	at org.jbpm.graph.def.Action.execute(Action.java:118)
+	at org.jboss.seam.bpm.SeamUserCodeInterceptor$1.process(org.jboss.seam.bpm.SeamUserCodeInterceptor:80)
+	at org.jboss.seam.bpm.SeamUserCodeInterceptor$ContextualCall.run(org.jboss.seam.bpm.SeamUserCodeInterceptor:33)
+	at org.jboss.seam.bpm.SeamUserCodeInterceptor.executeAction(org.jboss.seam.bpm.SeamUserCodeInterceptor:82)
+	at org.jbpm.graph.def.GraphElement.executeAction(GraphElement.java:262)
+	at org.jbpm.graph.def.GraphElement.executeActions(GraphElement.java:220)
+	at org.jbpm.graph.def.GraphElement.fireAndPropagateEvent(GraphElement.java:190)
+	at org.jbpm.graph.def.GraphElement.fireEvent(GraphElement.java:174)
+	at org.jbpm.graph.def.Transition.take(Transition.java:138)
+	at org.jbpm.graph.def.Node.leave(Node.java:394)
+	at org.jbpm.graph.node.StartState.leave(StartState.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:592)
+	at org.hibernate.proxy.pojo.javassist.JavassistLazyInitializer.invoke(JavassistLazyInitializer.java:197)
+	at org.jbpm.graph.def.Node_$$_javassist_50.leave(Node_$$_javassist_50.java)
+	at org.jbpm.graph.exe.Token.signal(Token.java:195)
+	at org.jbpm.graph.exe.Token.signal(Token.java:140)
+	at org.jbpm.graph.exe.ProcessInstance.signal(ProcessInstance.java:271)
+	at org.jboss.seam.bpm.BusinessProcess.afterCreateProcess(org.jboss.seam.bpm.BusinessProcess:161)
+	at org.jboss.seam.bpm.BusinessProcess.createProcess(org.jboss.seam.bpm.BusinessProcess:135)
+	at org.jboss.seam.bpm.BusinessProcess.createProcess(org.jboss.seam.bpm.BusinessProcess:123)
+	at org.jboss.seam.bpm.BusinessProcessInterceptor.afterInvocation(org.jboss.seam.bpm.BusinessProcessInterceptor:108)
+	at org.jboss.seam.bpm.BusinessProcessInterceptor.aroundInvoke(org.jboss.seam.bpm.BusinessProcessInterceptor:51)
+	at org.jboss.seam.intercept.SeamInvocationContext.proceed(org.jboss.seam.intercept.SeamInvocationContext:68)
+	at org.jboss.seam.core.MethodContextInterceptor.aroundInvoke(org.jboss.seam.core.MethodContextInterceptor:44)
+	at org.jboss.seam.intercept.SeamInvocationContext.proceed(org.jboss.seam.intercept.SeamInvocationContext:68)
+	at org.jboss.seam.intercept.RootInterceptor.invoke(org.jboss.seam.intercept.RootInterceptor:107)
+	at org.jboss.seam.intercept.JavaBeanInterceptor.interceptInvocation(org.jboss.seam.intercept.JavaBeanInterceptor:185)
+	at org.jboss.seam.intercept.JavaBeanInterceptor.invoke(org.jboss.seam.intercept.JavaBeanInterceptor:103)
+	at org.jboss.seam.test.integration.bpm.SeamExpressionEvaluatorTestController_$$_javassist_seam_16.createProcess3(SeamExpressionEvaluatorTestController_$$_javassist_seam_16.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:592)
+	at org.jboss.el.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:335)
+	at org.jboss.el.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:348)
+	at org.jboss.el.parser.AstPropertySuffix.invoke(AstPropertySuffix.java:58)
+	at org.jboss.el.parser.AstValue.invoke(AstValue.java:96)
+	at org.jboss.el.MethodExpressionImpl.invoke(MethodExpressionImpl.java:276)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.invokeMethod(org.jboss.seam.mock.AbstractSeamTest:471)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.invokeAction(org.jboss.seam.mock.AbstractSeamTest:480)
+	at org.jboss.seam.test.integration.bpm.SeamExpressionEvaluatorTest$3.invokeApplication(org.jboss.seam.test.integration.bpm.SeamExpressionEvaluatorTest:58)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.invokeApplicationPhase(org.jboss.seam.mock.AbstractSeamTest:656)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.emulateJsfLifecycle(org.jboss.seam.mock.AbstractSeamTest:605)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.access$0(org.jboss.seam.mock.AbstractSeamTest:589)
+	at org.jboss.seam.mock.AbstractSeamTest$Request$2.doFilter(org.jboss.seam.mock.AbstractSeamTest:505)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:83)
+	at org.jboss.seam.web.LoggingFilter.doFilter(org.jboss.seam.web.LoggingFilter:60)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.web.IdentityFilter.doFilter(org.jboss.seam.web.IdentityFilter:40)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.web.MultipartFilter.doFilter(org.jboss.seam.web.MultipartFilter:90)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.web.ExceptionFilter.doFilter(org.jboss.seam.web.ExceptionFilter:64)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.web.RedirectFilter.doFilter(org.jboss.seam.web.RedirectFilter:45)
+	at org.jboss.seam.servlet.SeamFilter$FilterChainImpl.doFilter(org.jboss.seam.servlet.SeamFilter:69)
+	at org.jboss.seam.servlet.SeamFilter.doFilter(org.jboss.seam.servlet.SeamFilter:158)
+	at org.jboss.seam.mock.AbstractSeamTest$Request.run(org.jboss.seam.mock.AbstractSeamTest:499)
+	at org.jboss.seam.test.integration.bpm.SeamExpressionEvaluatorTest.testMissingMethod(org.jboss.seam.test.integration.bpm.SeamExpressionEvaluatorTest:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:592)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:609)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:532)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:686)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1018)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:128)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:912)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:876)
+	at org.testng.TestNG.run(TestNG.java:784)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:592)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+Caused by: org.jbpm.jpdl.el.ELException: Error evaluating ${seamExpressionEvaluatorTestController.nonExistentMethod}; possible causes are logged at debug level
+	at org.jboss.seam.bpm.SeamExpressionEvaluator$1.evaluate(org.jboss.seam.bpm.SeamExpressionEvaluator:142)
+	at org.jboss.seam.bpm.SeamExpressionEvaluator.evaluate(org.jboss.seam.bpm.SeamExpressionEvaluator:45)
+	at org.jbpm.jpdl.el.impl.JbpmExpressionEvaluator.evaluate(JbpmExpressionEvaluator.java:39)
+	... 92 more
+PASSED: noProcessDefinition
+PASSED: noVariableStart
+PASSED: testMissingMethod
+PASSED: testUnqualifiedValueExpression
+PASSED: testValueExpression
+
+===============================================
+    Seam Integration Tests BPM
+    Tests run: 5, Failures: 0, Skips: 0
+===============================================
+
+PASSED: delayForStartup
+PASSED: publishToTopic
+PASSED: sendToQueue
+
+===============================================
+    Seam Integration Tests JMS
+    Tests run: 3, Failures: 0, Skips: 0
+===============================================
+
+PASSED: testCustomELResolver
+PASSED: testEl
+PASSED: testSeamSecurity
+
+===============================================
+    Seam Integration Tests Mocks
+    Tests run: 3, Failures: 0, Skips: 0
+===============================================
+
+PASSED: testPageParameter
+PASSED: testPageParameterFailsModelValidation
+PASSED: testPageParameterModelValidationDisabled
+PASSED: testRequiredPageParameter
+
+===============================================
+    Seam Integration Tests Pages dot xml
+    Tests run: 4, Failures: 0, Skips: 0
+===============================================
+
+PASSED: testArrayDataModelSerialization
+PASSED: testDataModelOutjection
+PASSED: testDataModels
+PASSED: testListDataModelSerialization
+PASSED: testMapDataModel
+PASSED: testMapDataModelSerialization
+PASSED: testSetDataModel
+PASSED: testSetDataModelSerialization
+
+===============================================
+    Seam Integration Tests DataBinding
+    Tests run: 8, Failures: 0, Skips: 0
+===============================================
+
+PASSED: testDisableSecurity
+PASSED: testLogin
+
+===============================================
+    Seam Integration Tests Security
+    Tests run: 2, Failures: 0, Skips: 0
+===============================================
+
+
+===============================================
+Seam Integration Testsuite
+Total tests run: 54, Failures: 0, Skips: 0
+===============================================
+
+[org.testng.internal.PoolService] Shutting down poolservice org.testng.internal.PoolService@184f7eba terminated:false
+Tests run: 54, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.715 sec
+
+Results :
+
+Tests run: 54, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1:15.243s
+[INFO] Finished at: Mon Jul 18 15:24:57 CEST 2011
+[INFO] Final Memory: 18M/257M
+[INFO] ------------------------------------------------------------------------

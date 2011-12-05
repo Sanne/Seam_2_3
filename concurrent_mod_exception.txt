@@ -1,0 +1,448 @@
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+ERROR [org.jboss.kernel.plugins.dependency.AbstractKernelController] Error installing to Described: name=persistence.units:jar=test-classes.jar,unitName=integration state=PreInstall
+java.util.ConcurrentModificationException
+    at java.util.LinkedHashMap$LinkedHashIterator.nextEntry(LinkedHashMap.java:365)
+    at java.util.LinkedHashMap$EntryIterator.next(LinkedHashMap.java:384)
+    at java.util.LinkedHashMap$EntryIterator.next(LinkedHashMap.java:383)
+    at java.util.HashMap.putAllForCreate(HashMap.java:481)
+    at java.util.HashMap.<init>(HashMap.java:219)
+    at java.util.LinkedHashMap.<init>(LinkedHashMap.java:192)
+    at org.jboss.aop.Domain.getBindings(Domain.java:157)
+    at org.jboss.aop.ClassContainer.createInterceptorChains(ClassContainer.java:251)
+    at org.jboss.aop.ClassContainer.rebuildInterceptors(ClassContainer.java:130)
+    at org.jboss.aop.ClassContainer.initializeClassContainer(ClassContainer.java:66)
+    at org.jboss.aop.proxy.container.ClassProxyContainer.initialise(ClassProxyContainer.java:172)
+    at org.jboss.aop.proxy.container.ContainerCache.createContainer(ContainerCache.java:188)
+    at org.jboss.aop.proxy.container.ContainerCache.createAndCacheContainer(ContainerCache.java:176)
+    at org.jboss.aop.proxy.container.ContainerCache.initClassContainer(ContainerCache.java:159)
+    at org.jboss.aop.proxy.container.ContainerCache.initialise(ContainerCache.java:92)
+    at org.jboss.aop.proxy.container.ContainerCache.initialise(ContainerCache.java:72)
+    at org.jboss.aop.microcontainer.integration.AOPDependencyBuilder.getDependencies(AOPDependencyBuilder.java:97)
+    at org.jboss.classadapter.plugins.BasicClassAdapter.getDependencies(BasicClassAdapter.java:80)
+    at org.jboss.beans.info.plugins.AbstractBeanInfo.getDependencies(AbstractBeanInfo.java:211)
+    at org.jboss.kernel.plugins.dependency.DescribeAction.installActionInternal(DescribeAction.java:53)
+    at org.jboss.kernel.plugins.dependency.KernelControllerContextAction.installAction(KernelControllerContextAction.java:135)
+    at org.jboss.kernel.plugins.dependency.KernelControllerContextAction.installAction(KernelControllerContextAction.java:46)
+    at org.jboss.dependency.plugins.action.SimpleControllerContextAction.simpleInstallAction(SimpleControllerContextAction.java:62)
+    at org.jboss.dependency.plugins.action.AccessControllerContextAction.install(AccessControllerContextAction.java:71)
+    at org.jboss.dependency.plugins.AbstractControllerContextActions.install(AbstractControllerContextActions.java:51)
+    at org.jboss.dependency.plugins.AbstractControllerContext.install(AbstractControllerContext.java:327)
+    at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:1309)
+    at org.jboss.dependency.plugins.AbstractController.incrementState(AbstractController.java:734)
+    at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:862)
+    at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:784)
+    at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:622)
+    at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:411)
+    at org.jboss.system.ServiceController.doChange(ServiceController.java:659)
+    at org.jboss.system.ServiceController.start(ServiceController.java:431)
+    at org.jboss.system.deployers.ServiceDeployer.start(ServiceDeployer.java:149)
+    at org.jboss.system.deployers.ServiceDeployer.deploy(ServiceDeployer.java:107)
+    at org.jboss.system.deployers.ServiceDeployer.deploy(ServiceDeployer.java:46)
+    at org.jboss.deployers.spi.deployer.helpers.AbstractSimpleRealDeployer.internalDeploy(AbstractSimpleRealDeployer.java:65)
+    at org.jboss.deployers.spi.deployer.helpers.AbstractRealDeployer.deploy(AbstractRealDeployer.java:50)
+    at org.jboss.deployers.plugins.deployers.DeployerWrapper.deploy(DeployerWrapper.java:169)
+    at org.jboss.deployers.plugins.deployers.DeployersImpl.doInstallParentFirst(DeployersImpl.java:853)
+    at org.jboss.deployers.plugins.deployers.DeployersImpl.doInstallParentFirst(DeployersImpl.java:874)
+    at org.jboss.deployers.plugins.deployers.DeployersImpl.doInstallParentFirst(DeployersImpl.java:906)
+    at org.jboss.deployers.plugins.deployers.DeployersImpl.install(DeployersImpl.java:794)
+    at org.jboss.dependency.plugins.AbstractControllerContext.install(AbstractControllerContext.java:327)
+    at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:1309)
+    at org.jboss.dependency.plugins.AbstractController.incrementState(AbstractController.java:734)
+    at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:862)
+    at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:784)
+    at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:622)
+    at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:411)
+    at org.jboss.deployers.plugins.deployers.DeployersImpl.process(DeployersImpl.java:498)
+    at org.jboss.deployers.plugins.main.MainDeployerImpl.process(MainDeployerImpl.java:506)
+    at org.jboss.embedded.DeploymentGroup.process(DeploymentGroup.java:127)
+    at org.jboss.embedded.Bootstrap.deployResourceBases(Bootstrap.java:289)
+    at org.jboss.seam.mock.EmbeddedBootstrap.startAndDeployResources(org.jboss.seam.mock.EmbeddedBootstrap:15)
+    at org.jboss.seam.mock.AbstractSeamTest.startJbossEmbeddedIfNecessary(org.jboss.seam.mock.AbstractSeamTest:1034)
+    at org.jboss.seam.mock.AbstractSeamTest.startSeam(org.jboss.seam.mock.AbstractSeamTest:925)
+    at org.jboss.seam.mock.SeamTest.startSeam(org.jboss.seam.mock.SeamTest:69)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+    at java.lang.reflect.Method.invoke(Method.java:592)
+    at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:609)
+    at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:421)
+    at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:158)
+    at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:89)
+    at org.testng.SuiteRunner.privateRun(SuiteRunner.java:284)
+    at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+    at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:912)
+    at org.testng.TestNG.runSuitesLocally(TestNG.java:876)
+    at org.testng.TestNG.run(TestNG.java:784)
+    at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+    at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+    at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+    at java.lang.reflect.Method.invoke(Method.java:592)
+    at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+    at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+SKIPPED CONFIGURATION: @BeforeClass setupClass
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @AfterClass cleanupClass
+SKIPPED CONFIGURATION: @BeforeClass setupClass
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @AfterClass cleanupClass
+SKIPPED CONFIGURATION: @BeforeClass setupClass
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @AfterClass cleanupClass
+SKIPPED CONFIGURATION: @BeforeClass setupClass
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @AfterClass cleanupClass
+SKIPPED CONFIGURATION: @BeforeClass setupClass
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @AfterClass cleanupClass
+SKIPPED CONFIGURATION: @BeforeClass setupClass
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @AfterClass cleanupClass
+SKIPPED CONFIGURATION: @BeforeClass setupClass
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @AfterClass cleanupClass
+SKIPPED: concurrentFactoryCall
+SKIPPED: concurrentFactoryCall
+SKIPPED: conversationList
+SKIPPED: conversationStack
+SKIPPED: killAllOthers
+SKIPPED: nestedKillAllOthers
+SKIPPED: switcher
+SKIPPED: testImport
+SKIPPED: testReflexiveEquals
+SKIPPED: testResolver
+SKIPPED: factoryMethodExpression
+SKIPPED: factoryValueExpression
+SKIPPED: nameSpaceComponent
+SKIPPED: nameSpaceFactory
+SKIPPED: namespaceOutjection
+SKIPPED: pageContextTest
+
+===============================================
+    Seam Integration Tests Contexts and Components
+    Tests run: 16, Failures: 0, Skips: 16
+    Configuration Failures: 0, Skips: 46
+===============================================
+
+SKIPPED CONFIGURATION: @BeforeClass setupClass
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @AfterClass cleanupClass
+SKIPPED CONFIGURATION: @BeforeClass setupClass
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @AfterClass cleanupClass
+SKIPPED: testEntityList
+SKIPPED: entityUpdatedInNestedConversation
+SKIPPED: testStale
+
+===============================================
+    Seam Integration Tests Persistence
+    Tests run: 3, Failures: 0, Skips: 3
+    Configuration Failures: 0, Skips: 10
+===============================================
+
+SKIPPED CONFIGURATION: @BeforeClass setupClass
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @AfterClass cleanupClass
+SKIPPED: testEventChain
+
+===============================================
+    Seam Integration Tests Events
+    Tests run: 1, Failures: 0, Skips: 1
+    Configuration Failures: 0, Skips: 4
+===============================================
+
+SKIPPED CONFIGURATION: @BeforeClass setupClass
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @AfterClass cleanupClass
+SKIPPED: testEmptyUnifiedELMethodBinding
+SKIPPED: testEmptyUnifiedELValueBinding
+SKIPPED: testUnifiedELMethodBinding
+SKIPPED: testUnifiedELMethodBindingWithNull
+SKIPPED: testUnifiedELValueBinding
+
+===============================================
+    Seam Integration Tests EL
+    Tests run: 5, Failures: 0, Skips: 5
+    Configuration Failures: 0, Skips: 12
+===============================================
+
+SKIPPED CONFIGURATION: @BeforeClass setupClass
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @AfterClass cleanupClass
+SKIPPED: testEntityIdentifier
+SKIPPED: testHibernateEntityIdentifier
+
+===============================================
+    Seam Integration Tests Framework
+    Tests run: 2, Failures: 0, Skips: 2
+    Configuration Failures: 0, Skips: 6
+===============================================
+
+SKIPPED CONFIGURATION: @BeforeClass setupClass
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @AfterClass cleanupClass
+SKIPPED CONFIGURATION: @BeforeClass setupClass
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @AfterClass cleanupClass
+SKIPPED: localeTest
+SKIPPED: timeZoneTest
+
+===============================================
+    Seam Integration Tests i8ln
+    Tests run: 2, Failures: 0, Skips: 2
+    Configuration Failures: 0, Skips: 8
+===============================================
+
+SKIPPED CONFIGURATION: @BeforeClass setupClass
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @AfterClass cleanupClass
+SKIPPED CONFIGURATION: @BeforeClass setupClass
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @AfterClass cleanupClass
+SKIPPED: noProcessDefinition
+SKIPPED: noVariableStart
+SKIPPED: testMissingMethod
+SKIPPED: testUnqualifiedValueExpression
+SKIPPED: testValueExpression
+
+===============================================
+    Seam Integration Tests BPM
+    Tests run: 5, Failures: 0, Skips: 5
+    Configuration Failures: 0, Skips: 14
+===============================================
+
+SKIPPED CONFIGURATION: @BeforeClass setupClass
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @AfterClass cleanupClass
+SKIPPED: delayForStartup
+SKIPPED: publishToTopic
+SKIPPED: sendToQueue
+
+===============================================
+    Seam Integration Tests JMS
+    Tests run: 3, Failures: 0, Skips: 3
+    Configuration Failures: 0, Skips: 4
+===============================================
+
+SKIPPED CONFIGURATION: @BeforeClass setupClass
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @AfterClass cleanupClass
+SKIPPED CONFIGURATION: @BeforeClass setupClass
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @AfterClass cleanupClass
+SKIPPED: testCustomELResolver
+SKIPPED: testEl
+SKIPPED: testSeamSecurity
+
+===============================================
+    Seam Integration Tests Mocks
+    Tests run: 3, Failures: 0, Skips: 3
+    Configuration Failures: 0, Skips: 10
+===============================================
+
+SKIPPED CONFIGURATION: @BeforeClass setupClass
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @AfterClass cleanupClass
+SKIPPED: testPageParameter
+SKIPPED: testPageParameterFailsModelValidation
+SKIPPED: testPageParameterModelValidationDisabled
+SKIPPED: testRequiredPageParameter
+
+===============================================
+    Seam Integration Tests Pages dot xml
+    Tests run: 4, Failures: 0, Skips: 4
+    Configuration Failures: 0, Skips: 10
+===============================================
+
+SKIPPED CONFIGURATION: @BeforeClass setupClass
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @BeforeMethod begin
+SKIPPED CONFIGURATION: @AfterMethod end
+SKIPPED CONFIGURATION: @AfterClass cleanupClass
+SKIPPED: testArrayDataModelSerialization
+SKIPPED: testDataModelOutjection
+SKIPPED: testDataModels
+SKIPPED: testListDataModelSerialization
+SKIPPED: testMapDataModel
+SKIPPED: testMapDataModelSerialization
+SKIPPED: testSetDataModel
+SKIPPED: testSetDataModelSerialization
+
+===============================================
+    Seam Integration Tests DataBinding
+    Tests run: 8, Failures: 0, Skips: 8
+    Configuration Failures: 0, Skips: 18
+===============================================
+
+FAILED CONFIGURATION: @BeforeSuite startSeam
+org.jboss.deployers.client.spi.IncompleteDeploymentException: Summary of incomplete deployments (SEE PREVIOUS ERRORS FOR DETAILS):
+
+*** CONTEXTS IN ERROR: Name -> Error
+
+persistence.units:jar=test-classes.jar,unitName=integration -> java.util.ConcurrentModificationException
+
+
+    at org.jboss.deployers.plugins.deployers.DeployersImpl.checkComplete(DeployersImpl.java:576)
+    at org.jboss.deployers.plugins.main.MainDeployerImpl.checkComplete(MainDeployerImpl.java:559)
+    at org.jboss.embedded.DeploymentGroup.process(DeploymentGroup.java:128)
+    at org.jboss.embedded.Bootstrap.deployResourceBases(Bootstrap.java:289)
+    at org.jboss.seam.mock.EmbeddedBootstrap.startAndDeployResources(org.jboss.seam.mock.EmbeddedBootstrap:15)
+    at org.jboss.seam.mock.AbstractSeamTest.startJbossEmbeddedIfNecessary(org.jboss.seam.mock.AbstractSeamTest:1034)
+    at org.jboss.seam.mock.AbstractSeamTest.startSeam(org.jboss.seam.mock.AbstractSeamTest:925)
+    at org.jboss.seam.mock.SeamTest.startSeam(org.jboss.seam.mock.SeamTest:69)
+    at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+    at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+    at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+    at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+    at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+... Removed 17 stack frames
+SKIPPED: testDisableSecurity
+SKIPPED: testLogin
+
+===============================================
+    Seam Integration Tests Security
+    Tests run: 2, Failures: 0, Skips: 2
+    Configuration Failures: 1, Skips: 0
+===============================================
+
+
+===============================================
+Seam Integration Testsuite
+Total tests run: 54, Failures: 0, Skips: 54
+Configuration Failures: 1, Skips: 143
+===============================================
+
+[org.testng.internal.PoolService] Shutting down poolservice org.testng.internal.PoolService@18312737 terminated:false
+Tests run: 198, Failures: 1, Errors: 0, Skipped: 197, Time elapsed: 10.92 sec <<< FAILURE!
+
+Results :
+
+Failed tests: 
+  startSeam(org.jboss.seam.test.integration.databinding.DataModelTest)
+
+Tests run: 198, Failures: 1, Errors: 0, Skipped: 197
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Seam Parent ....................................... SUCCESS [1.079s]
+[INFO] Seam Generator .................................... SUCCESS [5.177s]
+[INFO] Seam Core ......................................... SUCCESS [1:46.216s]
+[INFO] Seam JUL .......................................... SUCCESS [0.444s]
+[INFO] Seam UI ........................................... SUCCESS [46.690s]
+[INFO] Seam Debug ........................................ SUCCESS [0.446s]
+[INFO] Seam Excel ........................................ SUCCESS [1.115s]
+[INFO] Seam Flex ......................................... SUCCESS [0.570s]
+[INFO] Seam PDF .......................................... SUCCESS [1.330s]
+[INFO] Seam Mail ......................................... SUCCESS [1.313s]
+[INFO] Seam Remoting ..................................... SUCCESS [5.955s]
+[INFO] Seam Resteasy ..................................... SUCCESS [0.784s]
+[INFO] Seam RSS .......................................... SUCCESS [0.502s]
+[INFO] Seam Wicket ....................................... SUCCESS [0.867s]
+[INFO] Seam IoC .......................................... SUCCESS [0.590s]
+[INFO] JBoss Embedded Bootstrap .......................... SUCCESS [0.352s]
+[INFO] Seam Integration Tests ............................ FAILURE [47.361s]
+[INFO] Seam Functional Tests ............................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3:42.088s
+[INFO] Finished at: Mon Jul 18 17:14:11 CEST 2011
+[INFO] Final Memory: 62M/443M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.6:test (surefire-it) on project seam-integration-tests: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/maschmid/devel/seam/community/Seam_2_3/seam-integration-tests/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :seam-integration-tests
+
