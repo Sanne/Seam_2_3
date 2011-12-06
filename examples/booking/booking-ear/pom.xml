@@ -213,14 +213,16 @@
         
         <profile>
             <id>jbossas7</id>
-            
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation> 
             <build>
             	<plugins>
-	            	<plugin>
+<!--	            	<plugin>
 			            <groupId>org.jboss.as.plugins</groupId>
 			            <artifactId>jboss-as-maven-plugin</artifactId>
 			            <version>7.0.1.Final</version>
-                        <executions>
+                        <executions>-->
 <!--  This fails with NullPointerException -->                        
 <!-- 			                <execution> -->
 <!-- 					            <id>add-datasource</id> -->
@@ -242,14 +244,14 @@
 <!-- 					            </goals> -->
 <!-- 					        </execution> -->
 <!--  Datasource has to be created before running deploy -->
-					         <execution>
+<!--					         <execution>
                                 <phase>package</phase>
                                 <goals>
                                     <goal>deploy</goal>
                                 </goals>
                             </execution>
 				        </executions>
-			        </plugin>
+			        </plugin>-->
 	            	<plugin>
 		                <groupId>org.apache.maven.plugins</groupId>
 		                <artifactId>maven-ear-plugin</artifactId>
@@ -296,10 +298,10 @@
                     <artifactId>hibernate-validator</artifactId>
                     <scope>compile</scope>
                     <exclusions>
-                        <exclusion>
+<!--                        <exclusion>
                         	<groupId>antlr</groupId>
                         	<artifactId>antlr</artifactId>
-                        </exclusion>
+                        </exclusion>-->
                     	<exclusion>
                             <groupId>dom4j</groupId>
                             <artifactId>dom4j</artifactId>

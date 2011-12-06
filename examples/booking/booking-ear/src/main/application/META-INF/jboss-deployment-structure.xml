@@ -1,5 +1,8 @@
 <jboss-deployment-structure xmlns="urn:jboss:deployment-structure:1.0">
   <deployment>
+      <exclusions>
+        <module name="org.hibernate" slot="main"/>
+      </exclusions>
   	  <dependencies>
 	      <module name="org.apache.log4j" export="true"/>
 	      <module name="org.dom4j" export="true"/>
@@ -15,11 +18,18 @@
   	<exclusions>
 	      <module name="javax.faces.api" slot="main"/>
 	      <module name="com.sun.jsf-impl" slot="main"/>
+          <module name="org.hibernate" slot="main"/>
 	    </exclusions>
 	    <dependencies>
 	      <module name="javax.faces.api" slot="1.2"/>
           <module name="com.sun.jsf-impl" slot="1.2"/>
 	    </dependencies>
   </sub-deployment> 
+
+  <sub-deployment name="booking-ejb.jar">
+    <exclusions>
+      <module name="org.hibernate" slot="main"/>
+    </exclusions>
+  </sub-deployment>
 
 </jboss-deployment-structure> 
