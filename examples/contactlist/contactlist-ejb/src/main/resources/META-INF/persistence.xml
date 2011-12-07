@@ -6,10 +6,15 @@
 	<persistence-unit name="userDatabase" transaction-type="JTA">
       <provider>org.hibernate.ejb.HibernatePersistence</provider>
       <jta-data-source>java:/DefaultDS</jta-data-source>
+
+      <class>org.jboss.seam.example.contactlist.Comment</class>
+      <class>org.jboss.seam.example.contactlist.Contact</class>
+
       <properties>
          <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
          <property name="hibernate.show_sql" value="true"/>
          <property name="jboss.entity.manager.factory.jndi.name" value="java:/contactlistEntityManagerFactory"/>
+         <property name="jboss.as.jpa.providerModule" value="hibernate3-bundled" />
       </properties>
 	</persistence-unit>
 </persistence>
