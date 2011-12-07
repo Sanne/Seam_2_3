@@ -97,6 +97,39 @@
   
     <profiles>
         <profile>
+            <id>jbossas7</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-war-plugin</artifactId>
+                        <configuration>
+                            <webResources>
+                                <resource>
+                                    <directory>src/main/webapp</directory>
+                                    <filtering>true</filtering>
+                                    <excludes>
+                                        <exclude>**/components.xml</exclude>
+                                    </excludes>
+                                </resource>
+                                <resource>
+                                    <directory>src/main/resources-as7</directory>
+                                    <filtering>true</filtering>
+                                    <includes>
+                                        <include>components.xml</include>
+                                    </includes>
+                                    <targetPath>WEB-INF</targetPath>
+                                </resource>
+                            </webResources>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
             <id>jbossas6</id>
             <dependencies>
                 <dependency>
