@@ -8,7 +8,7 @@
                 template="#{theme.template}">
 
 <ui:define name="content">
-   <!-- <s:cache key="entry-#{blogEntry.id}" region="pageFragments"> -->
+   <s:cache key="entry-#{blogEntry.id}" region="pageFragments">
       <div class="blogEntry">
          <h3 id="title">#{blogEntry.title}</h3>
          <div id="body">
@@ -21,7 +21,7 @@
             </h:outputText>]
          </p>
       </div>
-   <!--  </s:cache> -->
+   </s:cache>
 </ui:define>
 
 </ui:composition>

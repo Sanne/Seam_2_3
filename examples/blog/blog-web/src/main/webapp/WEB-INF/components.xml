@@ -34,4 +34,6 @@
         <persistence:persistence-unit-jndi-name>java:/blogEntityManagerFactory</persistence:persistence-unit-jndi-name>
     </persistence:managed-persistence-context>
 
+    <cache:eh-cache-provider/>
+
 </components>

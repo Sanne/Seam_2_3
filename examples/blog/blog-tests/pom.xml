@@ -79,6 +79,11 @@
             <artifactId>functional-tests</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>net.sf.ehcache</groupId>
+            <artifactId>ehcache</artifactId>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
     
     <build>
