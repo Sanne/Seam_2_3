@@ -8,7 +8,7 @@
                 template="#{theme.template}">
 
 <ui:define name="content">
-   <s:cache key="index" region="pageFragments">
+   <!--  <s:cache key="index" region="pageFragments"> -->
       <h:dataTable id="entryTable" value="#{blog.recentBlogEntries}" var="blogEntry" rows="3">
          <h:column>
             <div class="blogEntry">
@@ -35,7 +35,7 @@
             </div>
          </h:column>
       </h:dataTable>
-   </s:cache>
+<!--    </s:cache> -->
 </ui:define>
 
 </ui:composition>

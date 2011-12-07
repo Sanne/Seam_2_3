@@ -31,4 +31,5 @@
       <module name="org.hibernate" slot="main"/>
     </exclusions>
   </sub-deployment>
+
 </jboss-deployment-structure>

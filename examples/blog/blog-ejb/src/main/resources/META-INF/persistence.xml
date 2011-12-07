@@ -6,6 +6,11 @@
    <persistence-unit name="entityManager">
       <provider>org.hibernate.ejb.HibernatePersistence</provider>
       <jta-data-source>java:/blogDatasource</jta-data-source>
+
+      <class>domain.BlogEntry</class>
+      <class>domain.Blog</class>
+      <class>domain.HitCount</class>
+
       <properties>
         <property name="jboss.as.jpa.providerModule" value="hibernate3-bundled" />
          <property name="hibernate.hbm2ddl.auto" value="create-drop"/>

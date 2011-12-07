@@ -170,12 +170,12 @@
                     <artifactId>hibernate-core</artifactId>
                     <scope>compile</scope>
 
-                    <exclusions>
+<!--                    <exclusions>
                         <exclusion>
                             <groupId>antlr</groupId>
                             <artifactId>antlr</artifactId>
                         </exclusion>
-                    </exclusions>
+                    </exclusions>-->
                 </dependency>
 
                 <dependency>
@@ -183,6 +183,19 @@
                     <artifactId>hibernate-validator</artifactId>
                     <scope>compile</scope>
                 </dependency>
+
+                <dependency>
+                    <groupId>org.hibernate</groupId>
+                    <artifactId>hibernate-entitymanager</artifactId>
+                    <scope>compile</scope>
+                </dependency>
+
+                <dependency>
+                    <groupId>org.hibernate</groupId>
+                    <artifactId>hibernate-annotations</artifactId>
+                    <scope>compile</scope>
+                </dependency>
+
             </dependencies>
         </profile>
         <profile>
