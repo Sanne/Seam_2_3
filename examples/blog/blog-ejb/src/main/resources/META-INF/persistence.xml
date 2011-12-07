@@ -15,13 +15,13 @@
         <property name="jboss.as.jpa.providerModule" value="hibernate3-bundled" />
          <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
          <property name="hibernate.show_sql" value="true"/>
-         <property name="hibernate.cache.use_query_cache" value="false"/>
+
+         <!-- Doesn't work, java.lang.ClassNotFoundException: org.hibernate.cache.infinispan.JndiInfinispanRegionFactory -->
          <property name="hibernate.cache.use_second_level_cache" value="false"/>
+         <property name="hibernate.cache.use_query_cache" value="false"/>
+
          <property name="jboss.entity.manager.factory.jndi.name" value="java:/blogEntityManagerFactory"/>
          <property name="hibernate.jdbc.charSet" value="utf-8"/>
-
-<!--         <property name="hibernate.cache.region.factory_class" value="org.hibernate.cache.infinispan.JndiInfinispanRegionFactory" /> -->
-         <!-- <property name="hibernate.cache.infinispan.cachemanager" value="java:CacheManager" /> -->
 
           <!-- use a file system based index -->
          <property name="hibernate.search.default.directory_provider"
