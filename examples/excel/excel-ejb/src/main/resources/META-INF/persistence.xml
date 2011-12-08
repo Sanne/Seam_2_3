@@ -11,6 +11,7 @@
             <property name="hibernate.show_sql" value="true"/>
             <property name="jboss.entity.manager.factory.jndi.name" 
                       value="java:/seamexcelEntityManagerFactory"/>
+            <property name="jboss.as.jpa.providerModule" value="hibernate3-bundled" />
         </properties>
     </persistence-unit>
 </persistence>
