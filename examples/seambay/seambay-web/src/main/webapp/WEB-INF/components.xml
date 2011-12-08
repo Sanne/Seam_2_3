@@ -36,5 +36,7 @@
     <event type="org.jboss.seam.security.loginSuccessful">
         <action execute="#{redirect.returnToCapturedView}"/>
     </event>    
+
+    <component class="org.jboss.seam.example.seambay.AuctionService" jndi-name="java:app/seambay-ejb/AuctionService"/>
             
 </components>

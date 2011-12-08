@@ -43,7 +43,7 @@ public class Aargh
       {
          InitialContext ctx = new InitialContext();
          
-         t = (UserTransaction) ctx.lookup("UserTransaction");
+         t = (UserTransaction) ctx.lookup("java:comp/UserTransaction");
          t.begin();
       
          EntityManager em = (EntityManager) Component.getInstance("entityManager", true);

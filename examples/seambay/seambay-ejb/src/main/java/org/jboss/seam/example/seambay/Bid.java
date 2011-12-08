@@ -46,6 +46,7 @@ public class Bid implements Serializable
    }
    
    @NotNull
+   @ManyToOne
    public Account getAccount()
    {
       return account;

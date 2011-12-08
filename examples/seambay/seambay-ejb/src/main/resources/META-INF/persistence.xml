@@ -6,6 +6,15 @@
    <persistence-unit name="seambayDatabase">
       <provider>org.hibernate.ejb.HibernatePersistence</provider>
       <jta-data-source>java:/seambayDatasource</jta-data-source>
+
+      <class>org.jboss.seam.example.seambay.Account</class>
+      <class>org.jboss.seam.example.seambay.AuctionImage</class>
+      <class>org.jboss.seam.example.seambay.Auction</class>
+      <class>org.jboss.seam.example.seambay.Bid</class>
+      <class>org.jboss.seam.example.seambay.Category</class>
+      <class>org.jboss.seam.example.seambay.Feedback</class>
+      <class>org.jboss.seam.example.seambay.User</class>
+
       <properties>
          <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
          <property name="hibernate.show_sql" value="false"/>
@@ -13,6 +22,8 @@
          <property name="hibernate.cache.provider_class" value="org.hibernate.cache.HashtableCacheProvider"/>
          <property name="hibernate.transaction.manager_lookup_class" value="org.hibernate.transaction.JBossTransactionManagerLookup"/>
          <property name="jboss.entity.manager.factory.jndi.name" value="java:/seambayEntityManagerFactory"/>
+
+         <property name="jboss.as.jpa.providerModule" value="hibernate3-bundled" />
       </properties>
    </persistence-unit>
 </persistence>
