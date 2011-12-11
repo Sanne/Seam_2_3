@@ -56,100 +56,144 @@
             </exclusions>
         </dependency>
 
-
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <scope>compile</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>commons-logging</groupId>
-            <artifactId>commons-logging</artifactId>
-            <scope>compile</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>commons-collections</groupId>
-            <artifactId>commons-collections</artifactId>
-            <scope>compile</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-annotations</artifactId>
-            <scope>compile</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-validator</artifactId>
-            <scope>compile</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-search</artifactId>
-            <scope>compile</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-entitymanager</artifactId>
-            <scope>compile</scope>
-        </dependency>
-
     </dependencies>
 
-    <build>
-        <finalName>seam-numberguess</finalName>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-ear-plugin</artifactId>
-                <version>2.3.2</version>
-                <configuration>
-                    <version>5</version>
-                    <defaultLibBundleDir>lib</defaultLibBundleDir>
-                    <!-- Exclude eclipse generated application.xml and manually modified jboss-app.xml during mvn build  -->
-                    <earSourceExcludes>**/application.xml, **/jboss-app.xml</earSourceExcludes>
-                    <!-- use maven generated application.xml instead -->
-                    <generateApplicationXml>true</generateApplicationXml>
-                    <filtering>true</filtering>
-                    <jboss>
-                        <version>4.2</version>
-                        <loader-repository>seam.jboss.org:loader=seam-numberguess</loader-repository>
-                    </jboss>
-                    <modules>
-                        <webModule>
-                            <groupId>org.jboss.seam.examples</groupId>
-                            <artifactId>numberguess-web</artifactId>
-                            <contextRoot>/seam-numberguess</contextRoot>
-                            <bundleFileName>numberguess-web.war</bundleFileName>
-                        </webModule>
-                        <ejbModule>
-                            <groupId>org.jboss.seam.examples</groupId>
-                            <artifactId>numberguess-ejb</artifactId>
-                            <bundleFileName>numberguess-ejb.jar</bundleFileName>
-                        </ejbModule>
-                    </modules>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>jboss-maven-plugin</artifactId>
-                <configuration>
-                    <jbossHome>${jboss.home}</jbossHome>
-                    <serverName>${jboss.domain}</serverName>
-                    <fileNames>
-                        <param>${project.build.directory}/${project.build.finalName}.${project.packaging}</param>
-                    </fileNames>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-
+    
     <profiles>
+        <profile>
+            <id>jbossas5</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+			<build>
+				<finalName>seam-numberguess</finalName>
+				<plugins>
+				    <plugin>
+				        <groupId>org.apache.maven.plugins</groupId>
+				        <artifactId>maven-ear-plugin</artifactId>
+				        <version>2.3.2</version>
+				        <configuration>
+				            <version>5</version>
+				            <defaultLibBundleDir>lib</defaultLibBundleDir>
+				            <!-- Exclude eclipse generated application.xml and manually modified jboss-app.xml during mvn build  -->
+				      <earSourceExcludes>**/application.xml, **/jboss-app.xml, META-INF/jboss-deployment-structure.xml</earSourceExcludes>
+				      <!-- use maven generated application.xml instead -->
+				                <generateApplicationXml>true</generateApplicationXml>
+				                <filtering>true</filtering>
+				                <jboss>
+				                    <version>4.2</version>
+				                    <loader-repository>seam.jboss.org:loader=seam-numberguess</loader-repository>
+				                </jboss>
+				                <modules>
+				                    <webModule>
+				                        <groupId>org.jboss.seam.examples</groupId>
+				                        <artifactId>numberguess-web</artifactId>
+				                        <contextRoot>/seam-numberguess</contextRoot>
+				                        <bundleFileName>numberguess-web.war</bundleFileName>
+				                    </webModule>
+				                    <ejbModule>
+				                        <groupId>org.jboss.seam.examples</groupId>
+				                        <artifactId>numberguess-ejb</artifactId>
+				                        <bundleFileName>numberguess-ejb.jar</bundleFileName>
+				                    </ejbModule>
+				                </modules>
+				            </configuration>
+				        </plugin>
+				        <plugin>
+				            <groupId>org.codehaus.mojo</groupId>
+				            <artifactId>jboss-maven-plugin</artifactId>
+				            <configuration>
+				                <jbossHome>${jboss.home}</jbossHome>
+				                <serverName>${jboss.domain}</serverName>
+				                <fileNames>
+				                    <param>${project.build.directory}/${project.build.finalName}.${project.packaging}</param>
+				                </fileNames>
+				            </configuration>
+				        </plugin>
+			    </plugins>
+			</build>
+        </profile>
+    
+        <profile>
+            <id>jbossas7</id>
+            <dependencies>
+				<dependency>
+					<groupId>org.hibernate</groupId>
+					<artifactId>hibernate-core</artifactId>
+					<scope>compile</scope>
+				</dependency>
+			
+				<dependency>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+					<scope>compile</scope>
+				</dependency>
+			
+				<dependency>
+					<groupId>commons-collections</groupId>
+					<artifactId>commons-collections</artifactId>
+					<scope>compile</scope>
+				</dependency>
+			
+				<dependency>
+					<groupId>org.hibernate</groupId>
+					<artifactId>hibernate-annotations</artifactId>
+					<scope>compile</scope>
+				</dependency>
+			
+				<dependency>
+					<groupId>org.hibernate</groupId>
+					<artifactId>hibernate-validator</artifactId>
+					<scope>compile</scope>
+				</dependency>
+			
+				<dependency>
+					<groupId>org.hibernate</groupId>
+					<artifactId>hibernate-search</artifactId>
+					<scope>compile</scope>
+				</dependency>
+			
+				<dependency>
+					<groupId>org.hibernate</groupId>
+					<artifactId>hibernate-entitymanager</artifactId>
+					<scope>compile</scope>
+				</dependency>
+                        
+            </dependencies>
+                        <build>
+                <finalName>seam-numberguess</finalName>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-ear-plugin</artifactId>
+                        <version>2.3.2</version>
+                        <configuration>
+                            <version>5</version>
+                            <defaultLibBundleDir>lib</defaultLibBundleDir>
+                            <!-- Exclude eclipse generated application.xml and manually modified jboss-app.xml during mvn build  -->
+                            <earSourceExcludes>**/application.xml, **/jboss-app.xml</earSourceExcludes>
+                            <!-- use maven generated application.xml instead -->
+                            <generateApplicationXml>true</generateApplicationXml>
+                            <filtering>true</filtering>
+                                <modules>
+                                    <webModule>
+                                        <groupId>org.jboss.seam.examples</groupId>
+                                        <artifactId>numberguess-web</artifactId>
+                                        <contextRoot>/seam-numberguess</contextRoot>
+                                        <bundleFileName>numberguess-web.war</bundleFileName>
+                                    </webModule>
+                                    <ejbModule>
+                                        <groupId>org.jboss.seam.examples</groupId>
+                                        <artifactId>numberguess-ejb</artifactId>
+                                        <bundleFileName>numberguess-ejb.jar</bundleFileName>
+                                    </ejbModule>
+                                </modules>
+                            </configuration>
+                        </plugin>
+                </plugins>
+            </build>
+        </profile>
+        
         <profile>
             <id>exploded</id>
             <properties>
