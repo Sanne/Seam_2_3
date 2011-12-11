@@ -58,37 +58,6 @@
         <finalName>seam-blog</finalName>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-ear-plugin</artifactId>
-                <version>2.3.2</version>
-                <configuration>
-                    <version>5</version>
-                    <defaultLibBundleDir>lib</defaultLibBundleDir>
-                    <!-- Exclude eclipse generated application.xml and manually modified jboss-app.xml during mvn build  -->
-                    <earSourceExcludes>**/application.xml, **/jboss-app.xml</earSourceExcludes>
-                    <!-- use maven generated application.xml instead -->
-                    <generateApplicationXml>true</generateApplicationXml>
-                    <filtering>true</filtering>
-                    <jboss>
-                        <version>4.2</version>
-                        <loader-repository>seam.jboss.org:loader=seam-blog</loader-repository>
-                    </jboss>
-                    <modules>
-                        <webModule>
-                            <groupId>org.jboss.seam.examples</groupId>
-                            <artifactId>blog-web</artifactId>
-                            <contextRoot>/seam-blog</contextRoot>
-                            <bundleFileName>blog-web.war</bundleFileName>
-                        </webModule>
-                        <ejbModule>
-                            <groupId>org.jboss.seam.examples</groupId>
-                            <artifactId>blog-ejb</artifactId>
-                            <bundleFileName>blog-ejb.jar</bundleFileName>
-                        </ejbModule>
-                    </modules>
-                </configuration>
-            </plugin>
-            <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>jboss-maven-plugin</artifactId>
                 <configuration>
@@ -202,9 +171,123 @@
                 </dependency>
 
             </dependencies>
+            
+             <build>
+		        <finalName>seam-blog</finalName>
+		        <plugins>
+		            <plugin>
+		                <groupId>org.apache.maven.plugins</groupId>
+		                <artifactId>maven-ear-plugin</artifactId>
+		                <version>2.3.2</version>
+		                <configuration>
+		                    <version>5</version>
+		                    <defaultLibBundleDir>lib</defaultLibBundleDir>
+		                    <!-- Exclude eclipse generated application.xml and manually modified jboss-app.xml during mvn build  -->
+		                    <earSourceExcludes>**/application.xml, **/jboss-app.xml</earSourceExcludes>
+		                    <!-- use maven generated application.xml instead -->
+		                    <generateApplicationXml>true</generateApplicationXml>
+		                    <filtering>true</filtering>
+		                    <modules>
+		                        <webModule>
+		                            <groupId>org.jboss.seam.examples</groupId>
+		                            <artifactId>blog-web</artifactId>
+		                            <contextRoot>/seam-blog</contextRoot>
+		                            <bundleFileName>blog-web.war</bundleFileName>
+		                        </webModule>
+		                        <ejbModule>
+		                            <groupId>org.jboss.seam.examples</groupId>
+		                            <artifactId>blog-ejb</artifactId>
+		                            <bundleFileName>blog-ejb.jar</bundleFileName>
+		                        </ejbModule>
+		                    </modules>
+		                </configuration>
+		            </plugin>
+		        </plugins>
+		    </build>
+        </profile>
+        <profile>
+            <id>jbossas51</id>
+            <build>
+                <plugins>
+                
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-ear-plugin</artifactId>
+						<version>2.3.2</version>
+						<configuration>
+							<version>5</version>
+							<defaultLibBundleDir>lib</defaultLibBundleDir>
+							<!-- Exclude eclipse generated application.xml and manually modified jboss-app.xml 
+								during mvn build -->
+							<earSourceExcludes>**/application.xml, **/jboss-app.xml,
+								META-INF/jboss-deployment-structure.xml</earSourceExcludes>
+							<!-- use maven generated application.xml instead -->
+							<generateApplicationXml>true</generateApplicationXml>
+							<filtering>true</filtering>
+							<jboss>
+								<version>4.2</version>
+								<loader-repository>seam.jboss.org:loader=seam-blog</loader-repository>
+							</jboss>
+							<modules>
+								<webModule>
+									<groupId>org.jboss.seam.examples</groupId>
+									<artifactId>blog-web</artifactId>
+									<contextRoot>/seam-blog</contextRoot>
+									<bundleFileName>blog-web.war</bundleFileName>
+								</webModule>
+								<ejbModule>
+									<groupId>org.jboss.seam.examples</groupId>
+									<artifactId>blog-ejb</artifactId>
+									<bundleFileName>blog-ejb.jar</bundleFileName>
+								</ejbModule>
+							</modules>
+						</configuration>
+					</plugin>
+					
+                </plugins>            
+            </build>
         </profile>
         <profile>
             <id>jbossas6</id>
+                        <build>
+                <plugins>
+                
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-ear-plugin</artifactId>
+                        <version>2.3.2</version>
+                        <configuration>
+                            <version>5</version>
+                            <defaultLibBundleDir>lib</defaultLibBundleDir>
+                            <!-- Exclude eclipse generated application.xml and manually modified jboss-app.xml 
+                                during mvn build -->
+                            <earSourceExcludes>**/application.xml, **/jboss-app.xml,
+                                META-INF/jboss-deployment-structure.xml</earSourceExcludes>
+                            <!-- use maven generated application.xml instead -->
+                            <generateApplicationXml>true</generateApplicationXml>
+                            <filtering>true</filtering>
+                            <jboss>
+                                <version>4.2</version>
+                                <loader-repository>seam.jboss.org:loader=seam-blog</loader-repository>
+                            </jboss>
+                            <modules>
+                                <webModule>
+                                    <groupId>org.jboss.seam.examples</groupId>
+                                    <artifactId>blog-web</artifactId>
+                                    <contextRoot>/seam-blog</contextRoot>
+                                    <bundleFileName>blog-web.war</bundleFileName>
+                                </webModule>
+                                <ejbModule>
+                                    <groupId>org.jboss.seam.examples</groupId>
+                                    <artifactId>blog-ejb</artifactId>
+                                    <bundleFileName>blog-ejb.jar</bundleFileName>
+                                </ejbModule>
+                            </modules>
+                        </configuration>
+                    </plugin>
+                    
+                </plugins>            
+            </build>
             <dependencies>
                 <dependency>
                     <groupId>org.hibernate</groupId>
@@ -262,6 +345,45 @@
         </profile>
         <profile>
             <id>jbossas42</id>
+                        <build>
+                <plugins>
+                
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-ear-plugin</artifactId>
+                        <version>2.3.2</version>
+                        <configuration>
+                            <version>5</version>
+                            <defaultLibBundleDir>lib</defaultLibBundleDir>
+                            <!-- Exclude eclipse generated application.xml and manually modified jboss-app.xml 
+                                during mvn build -->
+                            <earSourceExcludes>**/application.xml, **/jboss-app.xml,
+                                META-INF/jboss-deployment-structure.xml</earSourceExcludes>
+                            <!-- use maven generated application.xml instead -->
+                            <generateApplicationXml>true</generateApplicationXml>
+                            <filtering>true</filtering>
+                            <jboss>
+                                <version>4.2</version>
+                                <loader-repository>seam.jboss.org:loader=seam-blog</loader-repository>
+                            </jboss>
+                            <modules>
+                                <webModule>
+                                    <groupId>org.jboss.seam.examples</groupId>
+                                    <artifactId>blog-web</artifactId>
+                                    <contextRoot>/seam-blog</contextRoot>
+                                    <bundleFileName>blog-web.war</bundleFileName>
+                                </webModule>
+                                <ejbModule>
+                                    <groupId>org.jboss.seam.examples</groupId>
+                                    <artifactId>blog-ejb</artifactId>
+                                    <bundleFileName>blog-ejb.jar</bundleFileName>
+                                </ejbModule>
+                            </modules>
+                        </configuration>
+                    </plugin>
+                    
+                </plugins>            
+            </build>
             <dependencies>
                 <dependency>
                     <groupId>org.hibernate</groupId>
