@@ -5,9 +5,11 @@
             xmlns:persistence="http://jboss.com/products/seam/persistence"
             xmlns:security="http://jboss.com/products/seam/security"
             xmlns:framework="http://jboss.com/products/seam/framework"
+            xmlns:transaction="http://jboss.com/products/seam/transaction"
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xsi:schemaLocation=
-                "http://jboss.com/products/seam/core http://jboss.com/products/seam/core-2.3.xsd 
+                "http://jboss.com/products/seam/core http://jboss.com/products/seam/core-2.3.xsd
+                http://jboss.com/products/seam/framework http://jboss.com/products/seam/transaction-2.3.xsd 
                  http://jboss.com/products/seam/bpm http://jboss.com/products/seam/bpm-2.3.xsd 
                  http://jboss.com/products/seam/persistence http://jboss.com/products/seam/persistence-2.3.xsd 
                  http://jboss.com/products/seam/security http://jboss.com/products/seam/security-2.3.xsd
@@ -15,7 +17,7 @@
                  http://jboss.com/products/seam/components http://jboss.com/products/seam/components-2.3.xsd">
 
     <core:init debug="true" jndi-pattern="@jndiPattern@"/>
-    
+    <transaction:ejb-transaction/>
     <component class="org.jboss.seam.transaction.EjbSynchronizations" jndi-name="java:app/jboss-seam/EjbSynchronizations"/>
     <component class="org.jboss.seam.async.TimerServiceDispatcher" jndi-name="java:app/jboss-seam/TimerServiceDispatcher"/>
     

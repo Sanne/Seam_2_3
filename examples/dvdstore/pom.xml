@@ -53,13 +53,6 @@
                 <org.apache.lucene.version>3.0.3</org.apache.lucene.version>
             </properties>
         </profile>
-        <profile>
-            <id>jbossas7</id>
-            <properties>
-                <hibernate.search.version>4.0.0.CR2</hibernate.search.version>
-                <org.apache.lucene.version>3.4.0</org.apache.lucene.version>
-            </properties>
-        </profile>
     </profiles>
 
 </project>

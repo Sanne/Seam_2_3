@@ -44,8 +44,8 @@ public class Actor
 
     @Column(name="NAME", length=50)
     @Fields({
-       @Field(index=Index.YES),
-       @Field(index=Index.YES, name="name:ngrams", analyzer=@Analyzer(definition="ngrams"))})
+       @Field(index=Index.TOKENIZED),
+       @Field(index=Index.TOKENIZED, name="name:ngrams", analyzer=@Analyzer(definition="ngrams"))})
     public String getName() {
         return name;
     }

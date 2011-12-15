@@ -162,36 +162,6 @@
                     </plugin>
                 </plugins>                
             </build>
-            <dependencies>
-                <dependency>
-                    <groupId>org.hibernate</groupId>
-                    <artifactId>hibernate-search</artifactId>
-                    <version>${hibernate.search.version}</version>
-                    <scope>provided</scope>
-<!--                     <exclusions> -->
-<!--                         <exclusion> -->
-<!--                             <groupId>org.hibernate</groupId> -->
-<!--                             <artifactId>hibernate-core</artifactId> -->
-<!--                         </exclusion> -->
-<!--                         <exclusion> -->
-<!--                             <groupId>org.hibernate</groupId> -->
-<!--                             <artifactId>ejb3-persistence</artifactId> -->
-<!--                         </exclusion> -->
-<!--                         <exclusion> -->
-<!--                             <groupId>javax.transaction</groupId> -->
-<!--                             <artifactId>jta</artifactId> -->
-<!--                         </exclusion> -->
-<!--                         <exclusion> -->
-<!--                             <groupId>hsqldb</groupId> -->
-<!--                             <artifactId>hsqldb</artifactId> -->
-<!--                         </exclusion> -->
-<!--                         <exclusion> -->
-<!--                             <groupId>org.hibernate</groupId> -->
-<!--                             <artifactId>hibernate-commons-annotations</artifactId> -->
-<!--                         </exclusion> -->
-<!--                     </exclusions> -->
-                </dependency>
-            </dependencies>
         </profile>
         <profile>
             <id>tomcat</id>
