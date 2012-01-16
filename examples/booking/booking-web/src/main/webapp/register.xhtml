@@ -57,14 +57,14 @@
 					<s:decorate id="usernameDecorate" template="edit.xhtml">
 						<ui:define name="label">Username:</ui:define>
 						<h:inputText id="username" value="#{user.username}" required="true">
-							<a:ajax event="blur" reRender="usernameDecorate"/>
+							<a:ajax event="blur" render="usernameDecorate"/>
 						</h:inputText>
 					</s:decorate>
 					
 					<s:decorate id="nameDecorate" template="edit.xhtml">
 						<ui:define name="label">Real Name:</ui:define>
 						<h:inputText id="name" value="#{user.name}" required="true">
-							<a:ajax event="blur" reRender="nameDecorate"/>
+							<a:ajax event="blur" render="nameDecorate"/>
 						</h:inputText>
 					</s:decorate>
 					
