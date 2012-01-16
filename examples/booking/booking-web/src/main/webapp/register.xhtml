@@ -5,11 +5,11 @@
 	  xmlns:f="http://java.sun.com/jsf/core"
 	  xmlns:s="http://jboss.com/products/seam/taglib"
       xmlns:a="http://richfaces.org/a4j">
-<head>
+<h:head>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 	<title>JBoss Suites: Seam Framework</title>
 	<link href="css/screen.css" rel="stylesheet" type="text/css" />
-</head>
+</h:head>
 
 <body id="pgHome">
 
@@ -57,14 +57,14 @@
 					<s:decorate id="usernameDecorate" template="edit.xhtml">
 						<ui:define name="label">Username:</ui:define>
 						<h:inputText id="username" value="#{user.username}" required="true">
-							<a:support id="onblur" event="onblur" reRender="usernameDecorate"/>
+							<a:ajax event="blur" reRender="usernameDecorate"/>
 						</h:inputText>
 					</s:decorate>
 					
 					<s:decorate id="nameDecorate" template="edit.xhtml">
 						<ui:define name="label">Real Name:</ui:define>
 						<h:inputText id="name" value="#{user.name}" required="true">
-							<a:support id="onblur" event="onblur" reRender="nameDecorate"/>
+							<a:ajax event="blur" reRender="nameDecorate"/>
 						</h:inputText>
 					</s:decorate>
 					

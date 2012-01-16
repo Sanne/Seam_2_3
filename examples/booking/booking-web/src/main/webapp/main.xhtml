@@ -19,18 +19,18 @@
     <h1>Search Hotels</h1>
 
 	<h:form id="searchCriteria">
-	<fieldset> 
-	   <h:inputText id="searchString" value="#{hotelSearch.searchString}" style="width: 165px;">
-         <a:support id="onkeyup" event="onkeyup" actionListener="#{hotelSearch.find}" reRender="searchResults" />
-       </h:inputText>
+	<fieldset>
+       <h:inputText id="searchString" value="#{hotelSearch.searchString}" style="width: 165px;">
+        <a:ajax event="keyup" render="searchResults" listener="#{hotelSearch.find}"/>
+       </h:inputText>                     
        &#160;
-	   <a:commandButton id="findHotels" value="Find Hotels" action="#{hotelSearch.find}" reRender="searchResults"/>
+	   <a:commandButton id="findHotels" value="Find Hotels" actionListener="#{hotelSearch.find}"  render="searchResults"/>
        &#160;
-       <a:status id="status">
+       <a:ajax id="status">
           <f:facet id="StartStatus" name="start">
              <h:graphicImage id="SpinnerGif" value="/img/spinner.gif"/>
           </f:facet>
-       </a:status>
+       </a:ajax>
 	   <br/>
        <h:outputLabel id="MaximumResultsLabel" for="pageSize">Maximum results:</h:outputLabel>&#160;
        <h:selectOneMenu id="pageSize" value="#{hotelSearch.pageSize}">

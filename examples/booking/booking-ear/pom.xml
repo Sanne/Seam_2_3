@@ -31,7 +31,7 @@
         </dependency>
         <dependency>
             <groupId>org.jboss.seam</groupId>
-            <artifactId>jboss-seam</artifactId>
+            <artifactId>jboss-seam-jsf2</artifactId>
             <type>ejb</type>
             <scope>compile</scope>
             <exclusions>
@@ -45,6 +45,10 @@
                 </exclusion>
             </exclusions>
         </dependency>
+<!--        <dependency>
+        	<groupId>org.jboss.el</groupId>
+        	<artifactId>jboss-el</artifactId>
+        </dependency> -->
     </dependencies>
 
     <build>
@@ -219,28 +223,27 @@
 	            	<plugin>
 			            <groupId>org.jboss.as.plugins</groupId>
 			            <artifactId>jboss-as-maven-plugin</artifactId>
-			            <version>7.0.1.Final</version>
+			            <version>7.1.0.CR1</version>
                         <executions>
-<!--  This fails with NullPointerException -->                        
-<!-- 			                <execution> -->
-<!-- 					            <id>add-datasource</id> -->
-<!-- 					            <phase>package</phase> -->
-<!-- 					            <configuration> -->
-<!-- 					                <address>subsystem=datasources,data-source=java:/bookingDatasource</address> -->
-<!-- 					                <properties> -->
-<!-- 					                    <connection-url>jdbc:h2:mem:test;DB_CLOSE_DELAY=-1</connection-url> -->
-<!-- 					                    <jndi-name>java:/bookingDatasource</jndi-name> -->
-<!-- 					                    <enabled>true</enabled> -->
-<!-- 					                    <pool-name>bookingDSPool</pool-name> -->
-<!-- 					                    <user-name>sa</user-name> -->
-<!-- 					                    <password></password> -->
-<!-- 					                    <driver-name>h2</driver-name> -->
-<!-- 					                </properties> -->
-<!-- 					            </configuration> -->
-<!-- 					            <goals> -->
-<!-- 					                <goal>add-resource</goal> -->
-<!-- 					            </goals> -->
-<!-- 					        </execution> -->
+<!--                        
+ 			                <execution>
+ 					            <id>add-datasource</id>
+ 					            <phase>package</phase>
+ 					            <configuration>
+ 					                <address>subsystem=datasources,data-source=java:/bookingDatasource</address>
+ 					                <properties>
+ 					                    <connection-url>jdbc:h2:mem:test;DB_CLOSE_DELAY=-1</connection-url>
+ 					                    <jndi-name>java:/bookingDatasource</jndi-name>
+ 					                    <enabled>true</enabled>
+ 					                    <pool-name>bookingDSPool</pool-name>
+ 					                    <user-name>sa</user-name>
+ 					                    <driver-name>h2</driver-name>
+ 					                </properties>
+ 					            </configuration>
+ 					            <goals>
+ 					                <goal>add-resource</goal>
+ 					            </goals>
+ 					        </execution> -->
 <!--  Datasource has to be created before running deploy -->
 					         <execution>
                                 <phase>package</phase>
@@ -275,7 +278,7 @@
 		                        </ejbModule>
                                 <ejbModule>
                                     <groupId>org.jboss.seam</groupId>
-                                    <artifactId>jboss-seam</artifactId>
+                                    <artifactId>jboss-seam-jsf2</artifactId>
                                     <bundleFileName>jboss-seam.jar</bundleFileName>
                                 </ejbModule>
 		                    </modules>
