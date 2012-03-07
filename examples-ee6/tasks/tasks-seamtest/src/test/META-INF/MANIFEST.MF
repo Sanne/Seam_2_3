@@ -1,14 +1,14 @@
 Manifest-Version: 1.0
 Archiver-Version: Plexus Archiver
 Created-By: Apache Maven
-Built-By: danno
-Build-Jdk: 1.6.0_20
+Built-By: mana
+Build-Jdk: 1.6.0_26
 Specification-Title: JBoss Embedded Bootstrap
-Specification-Version: 2.3.0-SNAPSHOT
+Specification-Version: 2.3.0.Beta1-SNAPSHOT
 Specification-Vendor: Seam Framework
 Implementation-Title: JBoss Embedded Bootstrap
-Implementation-Version: 2.3.0-SNAPSHOT
+Implementation-Version: 2.3.0.Beta1-SNAPSHOT
 Implementation-Vendor-Id: org.jboss.seam
 Implementation-Vendor: Seam Framework
-Seam-Version: 2.3.0-SNAPSHOT
+Seam-Version: 2.3.0.Beta1-SNAPSHOT
 

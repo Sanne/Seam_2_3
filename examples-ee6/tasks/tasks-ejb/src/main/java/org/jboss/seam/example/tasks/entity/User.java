@@ -21,7 +21,7 @@
  */
 package org.jboss.seam.example.tasks.entity;
 
-import org.hibernate.validator.NotNull;
+import javax.validation.constraints.NotNull;
 
 import java.util.List;
 

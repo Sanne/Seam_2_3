@@ -5,7 +5,7 @@
    <parent>
       <artifactId>tasks</artifactId>
       <groupId>org.jboss.seam.examples-ee6</groupId>
-      <version>2.3.0-SNAPSHOT</version>
+      <version>2.3.0.Beta1-SNAPSHOT</version>
       <relativePath>../pom.xml</relativePath>
    </parent>
 
@@ -31,8 +31,8 @@
       </dependency>
       <dependency>
          <groupId>org.jboss.seam</groupId>
-         <artifactId>jboss-seam-jsf2</artifactId>
-         <version>2.3.0-SNAPSHOT</version>
+         <artifactId>jboss-seam</artifactId>
+         <version>2.3.0.Beta1-SNAPSHOT</version>
          <type>ejb</type>
       </dependency>
    </dependencies>
@@ -65,7 +65,7 @@
                   </ejbModule>
                   <ejbModule>
                      <groupId>org.jboss.seam</groupId>
-                     <artifactId>jboss-seam-jsf2</artifactId>
+                     <artifactId>jboss-seam</artifactId>
                      <bundleFileName>jboss-seam.jar</bundleFileName>
                   </ejbModule>
                </modules>
@@ -74,7 +74,7 @@
          <plugin>
             <groupId>org.jboss.as.plugins</groupId>
             <artifactId>jboss-as-maven-plugin</artifactId>
-            <version>7.1.0.CR1b</version>
+            <version>7.1.0.Final</version>
             <executions>
                <!-- This requires to be enabled manually as <enabled>true</enabled> doesn't
               work -->
@@ -98,7 +98,7 @@
                <!-- </execution> -->
                <!-- Datasource has to be created before running deploy -->
                <execution>
-                  <phase>install</phase>
+                  <phase></phase>
                   <goals>
                      <goal>deploy</goal>
                   </goals>
