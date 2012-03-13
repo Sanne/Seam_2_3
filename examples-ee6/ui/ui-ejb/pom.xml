@@ -18,6 +18,7 @@
             <artifactId>jboss-seam</artifactId>
             <type>ejb</type>
         </dependency>
+        <!-- TODO: fix when seam parent is updated  -->
         <dependency>
             <groupId>org.hibernate.javax.persistence</groupId>
             <artifactId>hibernate-jpa-2.0-api</artifactId>
@@ -37,5 +38,4 @@
             <scope>provided</scope>
         </dependency>
    </dependencies>
-   
 </project>

@@ -12,11 +12,6 @@
     <packaging>ear</packaging>
     <name>UI EAR Module (EE6)</name>
     
-    <properties>
-        <jboss.home>${env.JBOSS_HOME}</jboss.home>
-        <jboss.domain>default</jboss.domain>
-    </properties>
-    
     <dependencies>
         <dependency>
             <groupId>org.jboss.seam.examples-ee6</groupId>
